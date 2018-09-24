@@ -1,40 +1,36 @@
 import React, { Component } from 'react';
-import logo from '../../logo.svg';
+import { Route, withRouter, NavLink } from 'react-router-dom';
 import './App.css';
-import { fetchTournaments } from '../../helpers/apiCalls'
+import Home from '../Home/Home';
+import ScheduleContainer from '../ScheduleContainer/ScheduleContainer';
+import TournamentDetails from '../TournamentDetails/TournamentDetails';
 
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      tournamentId: 0
+      tournaments: []
     }
   }
-
-  handleGetTournaments = async () => {
-    console.log('click')
-    // const tournamentsResponse = await fetchTournaments();
-    // console.log(tournamentsResponse.tournaments[0]);
-  }
-
-
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-          <button onClick={this.handleGetTournaments}> Get Tournaments</button>
+            <NavLink to='/tournaments' className='nav'> Tournaments </NavLink>
+            <NavLink to='/players' className='nav'> Players </NavLink>
+            <NavLink to='/login' className='nav'> Login </NavLink>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/tournaments' component={ScheduleContainer} />
+        <Route path='/tournaments/:id' render={({ match }) => {
+          return <TournamentDetails id={match.params.id} />;
+        }} />
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
 
