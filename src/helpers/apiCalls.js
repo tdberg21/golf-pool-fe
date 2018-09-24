@@ -1,4 +1,4 @@
-import { apiKey } from './apiKey.js';
+// import { apiKey } from './apiKey.js';
 
 export const fetchTournaments = async () => {
   const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
