@@ -18,15 +18,19 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <NavLink to='/' className='logo'> d.g.p. </NavLink>
+          <div className='links-container'>
             <NavLink to='/tournaments' className='nav'> Tournaments </NavLink>
-            <NavLink to='/players' className='nav'> Players </NavLink>
+            <NavLink to='/players' className='nav'> Scoreboard </NavLink>
             <NavLink to='/login' className='nav'> Login </NavLink>
+          </div>
         </header>
         <Route exact path='/' component={Home} />
         <Route exact path='/tournaments' component={ScheduleContainer} />
         <Route path='/tournaments/:id' render={({ match }) => {
           return <TournamentDetails id={match.params.id} />;
         }} />
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"></link>
       </div>
     );
   }

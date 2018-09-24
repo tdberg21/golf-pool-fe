@@ -1,0 +1,44 @@
+.details-container {
+  padding: 20px;
+  background: 
+  linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)),
+    url('https://i2.wp.com/blog.golfballs.com/wp-content/uploads/2014/07/team-usa-ryder-cup.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.tournament-info-container {
+  background-color: rgba(243, 243, 243, 0.8);
+  margin: auto; 
+  padding: 10px;
+}
+
+.teams-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(243, 243, 243, 0.8);
+}
+
+.team-container {
+  width: 46%;
+}
+
+.player-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.player-card {
+  width: 26%;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.tournament-header {
+  margin: 0;
+  padding: 20px;
+}

@@ -1,19 +1,32 @@
+* {
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+}
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #006400;
+  background-color: #011705;
   height: 50px;
   padding: 20px;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .nav {
   color: #fff;
   text-decoration: none;
   margin: 10px;
+  font-size: 1.1em;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 2em;
 }
