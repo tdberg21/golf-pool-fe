@@ -1,10 +1,10 @@
 // import { apiKey } from './apiKey.js';
-let apiKey = ENV.api_key;
+let apiKey = process.env.API_KEY;
 
 export const fetchTournaments = async () => {
   const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
 
-  const url = `${corsAnywhereUrl}http://api.sportradar.us/golf-t2/schedule/pga/2018/tournaments/schedule.json?api_key=${process.env.api_key || apiKey}`
+  const url = `${corsAnywhereUrl}http://api.sportradar.us/golf-t2/schedule/pga/2018/tournaments/schedule.json?api_key=${apiKey}`
 
   const response = await fetch(url, {
     method: 'GET'
@@ -17,7 +17,7 @@ export const fetchTournaments = async () => {
 export const fetchTournamentSummary = async (tournId) => {
   const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
 
-  const url = `${corsAnywhereUrl}http://api.sportradar.us/golf-t2/summary/pga/2018/tournaments/${tournId}/summary.json?api_key=${process.env.api_key || apiKey}`
+  const url = `${corsAnywhereUrl}http://api.sportradar.us/golf-t2/summary/pga/2018/tournaments/${tournId}/summary.json?api_key=${apiKey}`
 
   const response = await fetch(url, {
     method: 'GET'
