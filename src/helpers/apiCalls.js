@@ -1,4 +1,6 @@
 // import { apiKey } from './apiKey.js';
+require('dotenv').config()
+
 let apiKey = process.env.API_KEY || process.env.api_key;
 
 export const fetchTournaments = async () => {
