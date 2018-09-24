@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <NavLink to='/' className='logo'> Fore! </NavLink>
+          <NavLink to='/' className='logo'> d.g.p. </NavLink>
           <div className='links-container'>
             <NavLink to='/tournaments' className='nav'> Tournaments </NavLink>
             <NavLink to='/players' className='nav'> Scoreboard </NavLink>
@@ -30,6 +30,7 @@ class App extends Component {
         <Route path='/tournaments/:id' render={({ match }) => {
           return <TournamentDetails id={match.params.id} />;
         }} />
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"></link>
       </div>
     );
   }

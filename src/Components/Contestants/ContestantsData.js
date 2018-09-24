@@ -7,29 +7,49 @@ export const contestants = [{
   name: 'Tory Dannenberg',
   id: 1,
   image: tory,
-  career_wins: 2235235
+  career_wins: 2235235,
+  pgaChamp: '4th',
+  british: '1st',
+  usOpen: '2nd',
+  masters: '1st'
 }, 
   {
     name: 'Christy Dannenberg',
     id: 2,
     image: christy,
-    career_wins: 17
+    career_wins: 17,
+    pgaChamp: '3rd',
+    british: '2nd',
+    usOpen: '1st',
+    masters: 'Last'
   }, 
   {
     name: 'Maddy Dannenberg',
     id: 3,
     image: maddy,
-    career_wins: 0
+    career_wins: 0,
+    pgaChamp: '2nd',
+    british: '3rd',
+    usOpen: 'Last',
+    masters: '3rd'
   },
   {
     name: 'RJ Miller',
     id: 4,
     image: arejay,
-    career_wins: 0
+    career_wins: 0,
+    pgaChamp: 'Last',
+    british: '4th',
+    usOpen: 'n/a',
+    masters: 'n/a'
   },
   {
     name: 'Kevin Williamson',
     id: 5,
     image: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Beaker_%28Muppet%29.jpg/200px-Beaker_%28Muppet%29.jpg',
-    career_wins: 0
+    career_wins: 1,
+    pgaChamp: 'Winner',
+    british: 'Last',
+    usOpen: '3rd',
+    masters: '2nd'
   }]

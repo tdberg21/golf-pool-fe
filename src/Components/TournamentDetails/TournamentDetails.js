@@ -50,14 +50,14 @@ class TournamentDetails extends Component {
     if(this.state.details && this.state.details.venue) {
       return (
         <div className='details-container'>
-          <div>
-            <h3>{this.state.details.name}</h3>
+          <div className='tournament-info-container'>
+            <h3 className='tournament-header'>{this.state.details.name}</h3>
             <p>{this.state.details.venue.name}</p>
             <p>{this.state.details.start_date}</p>
+          </div>
             <div className='teams-container'>
               {this.teamsToDisplay()}
             </div>
-          </div>
         </div>
       )
     } else {

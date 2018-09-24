@@ -19,17 +19,12 @@
 }
 
 .parallax-text-sections {
-  /* min-height: 200px; */
   margin-bottom: -20px;
   padding-top: 20px;
   padding-bottom: 50px;
   background-color: #011705;
   color: #fff;
 }
-
-/* .welcome-section {
-  
-} */
 
 .parallax-headers {
   margin: 0;

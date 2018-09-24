@@ -6,13 +6,15 @@
 }
 
 .contestants-card {
-  width: 25%;
+  width: 28%;
   border: 1px solid #fff;
   margin: 25px 10px 40px 10px;
+  background-color: rgba(11, 62, 21, 0.392);
 }
 
 .contestants-text {
   color: #fff;
+  font-size: 0.8rem;
 }
 
 .contestant-name {
