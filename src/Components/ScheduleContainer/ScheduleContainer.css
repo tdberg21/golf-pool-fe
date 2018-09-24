@@ -1,0 +1,23 @@
+.schedule-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tournament-card {
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+.tournament-card-container {
+  width: 20%;
+  margin: 25px;
+
+}
+
+.card-link {
+  text-decoration: none;
+  color: #333;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import Contestants from '../Contestants/Contestants';
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
       <div className='parallax third-parallax'></div>
       <div className='parallax-text-sections contestants-section'>
         <h2 className='parallax-headers'>The Contestants</h2>
-        <p>Tory, Christy, Maddy, RJ, Kevin</p>
+        <Contestants />
       </div>
     </div>
   )

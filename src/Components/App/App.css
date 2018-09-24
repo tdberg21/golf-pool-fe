@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #055516;
+  background-color: #011705;
   height: 50px;
   padding: 20px;
   color: white;
@@ -16,4 +16,12 @@
   color: #fff;
   text-decoration: none;
   margin: 10px;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 2em;
+  font-weight: 600;
 }

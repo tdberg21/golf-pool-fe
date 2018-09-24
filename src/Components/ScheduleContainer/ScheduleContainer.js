@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { fetchTournaments } from '../../helpers/apiCalls';
 import { scrubTournaments } from '../../helpers/dataCleaners';
 import Card from '../Card/Card';
+import './ScheduleContainer.css';
 
 class ScheduleContainer extends Component {
   constructor() {
@@ -36,7 +37,7 @@ class ScheduleContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className='schedule-container'>
         {this.tournamentsToDisplay()}
       </div>
     )
