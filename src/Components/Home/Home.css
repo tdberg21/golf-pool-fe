@@ -1,5 +1,5 @@
 .parallax { 
-    height: 500px; 
+    height: 600px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,4 +16,22 @@
 
 .third-parallax {
   background-image: url('http://www.golfwrx.com/wp-content/uploads/2016/09/Bethpage_Black_How_Hard_is_It.jpg')
+}
+
+.parallax-text-sections {
+  /* min-height: 200px; */
+  margin-bottom: -20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: black;
+  color: #fff;
+}
+
+/* .welcome-section {
+  
+} */
+
+.parallax-headers {
+  margin: 0;
+  padding-top: 10px;
 }
