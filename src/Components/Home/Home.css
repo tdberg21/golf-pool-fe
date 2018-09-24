@@ -1,0 +1,19 @@
+.parallax { 
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-parallax {
+  background-image: url('https://www.desktopbackground.org/p/2011/11/09/294104_augusta-national-wallpapers-wallpapers-cave_1440x900_h.jpg')
+}
+
+.second-parallax {
+  background-image: url('https://3989ac5bcbe1edfc864a-0a7f10f87519dba22d2dbc6233a731e5.ssl.cf2.rackcdn.com/infitbody/Torrey_Pines.jpeg')
+}
+
+.third-parallax {
+  background-image: url('http://www.golfwrx.com/wp-content/uploads/2016/09/Bethpage_Black_How_Hard_is_It.jpg')
+}

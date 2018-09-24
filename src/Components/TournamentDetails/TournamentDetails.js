@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { fetchTournamentSummary } from '../../helpers/apiCalls';
+import './TournamentDetails.css';
 
 
 class TournamentDetails extends Component {
@@ -22,11 +23,11 @@ class TournamentDetails extends Component {
     if (this.state.details.teams) {
       return this.state.details.teams.map(team => {
         return (
-          <div>
+          <div className='team-container'>
             <h4>{team.name}</h4>
-            <ul>
+            <div className='player-container'>
               {this.cardsToDisplay(team.members)}
-            </ul>
+            </div>
           </div>
         )
       })
@@ -36,9 +37,10 @@ class TournamentDetails extends Component {
   cardsToDisplay = (members) => {
     return members.map(player => {
       return (
-        <div>
+        <div className='player-card'>
           <h6>{player.first_name} {player.last_name}</h6>
-          <h6>{player.country}</h6>
+          <p>{player.country}</p>
+          <p>{player.role}</p>
         </div>
       )
     })
@@ -52,7 +54,7 @@ class TournamentDetails extends Component {
             <h3>{this.state.details.name}</h3>
             <p>{this.state.details.venue.name}</p>
             <p>{this.state.details.start_date}</p>
-            <div>
+            <div className='teams-container'>
               {this.teamsToDisplay()}
             </div>
           </div>

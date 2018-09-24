@@ -1,0 +1,18 @@
+.teams-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.team-container {
+  width: 46%;
+}
+
+.player-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.player-card {
+  width: 26%;
+}

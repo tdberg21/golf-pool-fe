@@ -18,9 +18,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <h1>Fore!</h1>
+          <div className='links-container'>
             <NavLink to='/tournaments' className='nav'> Tournaments </NavLink>
             <NavLink to='/players' className='nav'> Players </NavLink>
             <NavLink to='/login' className='nav'> Login </NavLink>
+          </div>
         </header>
         <Route exact path='/' component={Home} />
         <Route exact path='/tournaments' component={ScheduleContainer} />
