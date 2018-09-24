@@ -1,6 +1,7 @@
 import christy from '../../assets/christy.png';
-import maddy from '../../assets/maddy.png'
-import tory from '../../assets/tory2.png'
+import maddy from '../../assets/maddy.png';
+import tory from '../../assets/tory2.png';
+import arejay from '../../assets/arejay.png';
 
 export const contestants = [{
   name: 'Tory Dannenberg',
@@ -23,12 +24,12 @@ export const contestants = [{
   {
     name: 'RJ Miller',
     id: 4,
-    image: maddy,
+    image: arejay,
     career_wins: 0
   },
   {
     name: 'Kevin Williamson',
     id: 5,
-    image: maddy,
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Beaker_%28Muppet%29.jpg/200px-Beaker_%28Muppet%29.jpg',
     career_wins: 0
   }]

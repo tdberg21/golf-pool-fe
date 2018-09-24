@@ -1,5 +1,5 @@
 .parallax { 
-    height: 600px; 
+    height: 400px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 }
 
 .third-parallax {
-  background-image: url('http://www.golfwrx.com/wp-content/uploads/2016/09/Bethpage_Black_How_Hard_is_It.jpg')
+  background-image: url('https://g2gcollection.com/wp-content/uploads/2015/10/St_Andrews-Old_Course-sm.jpg')
 }
 
 .parallax-text-sections {
