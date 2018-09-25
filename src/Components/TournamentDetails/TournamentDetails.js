@@ -13,9 +13,9 @@ class TournamentDetails extends Component {
   }
 
   async componentDidMount() {
-    const details = await fetchTournamentSummary(this.props.id);
+    // const details = await fetchTournamentSummary(this.props.id);
     this.setState({
-      details
+      details: {}
     })
   }
 
@@ -37,8 +37,8 @@ class TournamentDetails extends Component {
   cardsToDisplay = (members) => {
     return members.map(player => {
       return (
-        <div className='player-card'>
-          <h6>{player.first_name} {player.last_name}</h6>
+        <div className='player-card {player.id}'>
+          <h6 className={player.id}>{player.first_name} {player.last_name}</h6>
           <p>{player.country}</p>
           <p>{player.role}</p>
         </div>
@@ -46,8 +46,25 @@ class TournamentDetails extends Component {
     })
   }
 
+  displayField = () => {
+    return this.state.details.field.map(player => {
+      return (
+        <div className='field-player-card'>
+          <h4>{player.first_name} {player.last_name}</h4>
+          <p>{this.titleCase(player.country)}</p>
+        </div>
+      )
+    })
+  }
+
+  titleCase = (input) => {
+    return input.toLowerCase().split(' ').map(word => {
+      return (word.charAt(0).toUpperCase() + word.slice(1));
+    }).join(' ');
+  }
+
   render () {
-    if(this.state.details && this.state.details.venue) {
+    if(this.state.details && this.state.details.venue && this.state.details.teams) {
       return (
         <div className='details-container'>
           <div className='tournament-info-container'>
@@ -56,14 +73,27 @@ class TournamentDetails extends Component {
             <p>{this.state.details.start_date}</p>
           </div>
             <div className='teams-container'>
-              {this.teamsToDisplay()}
+              {this.teamsToDisplay() || this.displayField()}
             </div>
+        </div>
+      )
+    } else if (this.state.details && this.state.details.venue && this.state.details.field){
+      return (
+        <div className='details-container'>
+          <div className='tournament-info-container'>
+            <h3 className='tournament-header'>{this.state.details.name}</h3>
+            <p>{this.state.details.venue.name}</p>
+            <p>{this.state.details.start_date}</p>
+          </div>
+          <div className='field-list-container'>
+            {this.displayField()}
+          </div>
         </div>
       )
     } else {
       return (
         <div>
-          Loading....
+          {}
         </div>
       )
     }

@@ -1,7 +1,7 @@
-// import { apiKey } from './apiKey.js';
-require('dotenv').config()
+import { apiKey } from './apiKey.js';
+// require('dotenv').config()
 
-let apiKey = process.env.API_KEY || process.env.api_key;
+// let apiKey = process.env.API_KEY || process.env.api_key;
 
 export const fetchTournaments = async () => {
   const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
