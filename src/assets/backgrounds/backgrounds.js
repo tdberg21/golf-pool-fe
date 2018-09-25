@@ -1,0 +1,1 @@
+export const tiger1 = 'https://www.desktopbackground.org/p/2010/09/18/81837_tiger-woods-wallpapers-hd-desktop-backgrounds_800x600_h.jpg';

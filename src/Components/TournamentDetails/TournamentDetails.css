@@ -21,6 +21,13 @@
   background-color: rgba(243, 243, 243, 0.8);
 }
 
+.field-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgba(243, 243, 243, 0.8);
+}
+
 .team-container {
   width: 46%;
 }
@@ -32,6 +39,13 @@
 }
 
 .player-card {
+  width: 26%;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.field-player-card {
   width: 26%;
   border: 1px solid black;
   border-radius: 2px;
