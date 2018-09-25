@@ -17,7 +17,6 @@ const dateCleaner = date => {
 }
 
 const findMonth = number => {
-  console.log(number)
   if (number == 1) {
     return 'January'
   }
