@@ -4,6 +4,36 @@
   justify-content: space-between;
 }
 
+.player-list-parallax {
+  height: 400px; 
+    min-height: fit-content; 
+  background-color: lightslategray;    
+}
+
+.player-parallax-text-sections {
+  margin-bottom: -20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: #fff;
+  background-image: url('https://www.desktopbackground.org/p/2010/09/18/81837_tiger-woods-wallpapers-hd-desktop-backgrounds_800x600_h.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .first-players-parallax {
+  background-image: url('https://www.desktopbackground.org/p/2010/09/18/81837_tiger-woods-wallpapers-hd-desktop-backgrounds_800x600_h.jpg')
+}
+
+.second-players-parallax {
+  background-image: url('https://www.desktopbackground.org/p/2013/07/10/605187_4896x3264px-tiger-woods-swing-golf_4896x3264_h.jpg')
+}
+
+.third-players-parallax {
+  background-image: url('https://www.desktopbackground.org/p/2012/07/08/417645_tiger-woods-wallpaper-hd-2-jpg_2570x1661_h.jpg')
+} */
+
 .usa {
   background: linear-gradient(
       rgba(243, 243, 243, 0.4), 
@@ -58,6 +88,54 @@
       rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSVBUwA7NlEMHEaH6LE6a0xdL5Y0OQwv6Vw4xAHb4Z4PFrBuf');
 }
 
+.ireland {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEiRvlxDxVkAD0YCJoK0ucqmQfqVbuEPatxXK1nNccWc_2Bpjrmg');
+}
+
+.nz {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqzyoHBRipCE8YpMisKNV-EGqe5HZeeosMA5a4pdF-gCi-Wjje6Q');
+}
+
+.scotland {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyu68_OwatlfIiqdTInSZaGe4JNhOpf8G5JbfqdmMU4_cSqgsFGQ');
+}
+
+.china {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_GPg1pApFLwqI2nSnmRur4qc3X9l8-Y8fRl02mCylrsGSx10q');
+}
+
+.argentina {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsqtI5MuQbZKKdIu9Aag5yTVJHIpi00YEZB9qFQVpuIOGGWoeyKw');
+}
+
+.belgium {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb7dYTJPGn4yUlT6SaMBQPzDMhKJJoiq0DM697zi0Fya7C0dBS');
+}
+
+.canada {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6r3qGkgOr1MvoyUrZPJlnm41ObiFAVf6J6oCjX8PsqdESDhHMGQ');
+}
+
+.venezuala {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_1wX2VWBDf0b4IKV_LjtKO4GGgnPo3ZxYGeZUx_nIwNxAOYuCUA');
+}
+
 .australia {
   background: linear-gradient(
       rgba(243, 243, 243, 0.4), 
@@ -65,9 +143,11 @@
 }
 
 .player-info-card {
-  width: 30%;
+  width: 28%;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  
+  margin: 2em 1em;
+  border-radius: 4px;
 }
+
