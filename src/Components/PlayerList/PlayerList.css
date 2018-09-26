@@ -1,0 +1,73 @@
+.player-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.usa {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://txwinelover.com/wp-content/uploads/2015/06/AmericanFlag.jpg');
+}
+
+.uk {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://ak4.picdn.net/shutterstock/videos/9055384/thumb/1.jpg');
+}
+
+.spain {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://ak8.picdn.net/shutterstock/videos/6446978/thumb/1.jpg');
+}
+
+.sweden {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://ak7.picdn.net/shutterstock/videos/9211847/thumb/1.jpg');
+}
+
+.japan {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMc1_wuXZys5ywJ6J79UaSR4n9zfXikmVU28vmHUZmn9McJsMX');
+}
+
+.korea {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Hdaigbz-zcr8MPgzMfktzdlW7nFZXP4DmtSheyqDa6dV2_r5');
+}
+
+.rsa {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ1nKswD_gTsrkHDhDRFrL-Ku23VDSSHBPUWDXa_ZvsU1HwvkGSQ');
+}
+
+.thai {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjPmRdawD8TrEJHwkZORIV9BK2pWKMxRknQubaUvMN6Rta-R6DSA');
+}
+
+.denmark {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSVBUwA7NlEMHEaH6LE6a0xdL5Y0OQwv6Vw4xAHb4Z4PFrBuf');
+}
+
+.australia {
+  background: linear-gradient(
+      rgba(243, 243, 243, 0.4), 
+      rgba(255, 243, 243, 0.4)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOU044GPzLiQ8238z03r3ZFi1uhcK95RMS07li0v-fRbkdUoGcUw');
+}
+
+.player-info-card {
+  width: 30%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
