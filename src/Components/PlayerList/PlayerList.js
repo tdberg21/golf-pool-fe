@@ -99,7 +99,7 @@ class PlayerList extends Component {
         <div className='player-parallax-text-sections twenties-section'>
           <h2 className='welcome-header parallax-headers'>Players 81-101</h2>
         </div>
-        <div className='player-list-parallax fourth-players-parallax player-card-container'>
+        <div className='player-list-parallax fifth-players-parallax player-card-container'>
           {this.displayCardsLastTwenty()}
         </div>
       </div>

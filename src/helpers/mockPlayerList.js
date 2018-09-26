@@ -22,7 +22,8 @@ export const topPlayers = [{
   "AveragePoints": 11.5,
   "TotalPoints": 519.0,
   "PointsLost": -217.5,
-  "PointsGained": 338.9
+  "PointsGained": 338.9,
+  "country": "UK"
 }, {
   "PlayerSeasonID": 2007,
   "Season": 2018,
@@ -35,8 +36,7 @@ export const topPlayers = [{
   "TotalPoints": 480.7,
   "PointsLost": -191.2,
   "PointsGained": 336.7, 
-    "country": "USA"
-
+  "country": "USA"
 }, {
   "PlayerSeasonID": 2002,
   "Season": 2018,
@@ -49,8 +49,7 @@ export const topPlayers = [{
   "TotalPoints": 531.1,
   "PointsLost": -301.0,
   "PointsGained": 342.1,
-    "country": "USA"
-
+  "country": "USA"
 }, {
   "PlayerSeasonID": 2019,
   "Season": 2018,
@@ -63,8 +62,7 @@ export const topPlayers = [{
   "TotalPoints": 408.6,
   "PointsLost": -141.1,
   "PointsGained": 333.0,
-    "country": 'Spain'
-
+  "country": 'Spain'
 }, {
   "PlayerSeasonID": 2009,
   "Season": 2018,
@@ -90,8 +88,7 @@ export const topPlayers = [{
   "TotalPoints": 408.2,
   "PointsLost": -69.2,
   "PointsGained": 391.2,
-    "country": "USA"
-
+  "country": "USA"
 }, {
   "PlayerSeasonID": 2003,
   "Season": 2018,
@@ -104,8 +101,7 @@ export const topPlayers = [{
   "TotalPoints": 390.4,
   "PointsLost": -225.2,
   "PointsGained": 252.5,
-    "country": "Spain"
-
+  "country": "Spain"
 }, {
   "PlayerSeasonID": 2006,
   "Season": 2018,
@@ -118,8 +114,7 @@ export const topPlayers = [{
   "TotalPoints": 342.5,
   "PointsLost": -211.8,
   "PointsGained": 186.6,
-    "country": "USA"
-
+  "country": "USA"
 }, {
   "PlayerSeasonID": 2001,
   "Season": 2018,
@@ -132,8 +127,7 @@ export const topPlayers = [{
   "TotalPoints": 351.1,
   "PointsLost": -300.0,
   "PointsGained": 153.0,
-    "country": "USA"
-
+  "country": "USA"
 }, {
   "PlayerSeasonID": 2012,
   "Season": 2018,
@@ -146,8 +140,7 @@ export const topPlayers = [{
   "TotalPoints": 281.7,
   "PointsLost": -192.0,
   "PointsGained": 235.0,
-    "country": "Australia"
-
+  "country": "Australia"
 }, {
   "PlayerSeasonID": 2016,
   "Season": 2018,
@@ -160,8 +153,7 @@ export const topPlayers = [{
   "TotalPoints": 352.8,
   "PointsLost": -174.4,
   "PointsGained": 261.8,
-    "country": 'UK'
-
+  "country": 'UK'
 }, {
   "PlayerSeasonID": 2628,
   "Season": 2018,
@@ -174,8 +166,7 @@ export const topPlayers = [{
   "TotalPoints": 262.4,
   "PointsLost": -15.8,
   "PointsGained": 267.8,
-    "country": 'USA'
-
+  "country": 'USA'
 }, {
   "PlayerSeasonID": 2081,
   "Season": 2018,
@@ -188,8 +179,7 @@ export const topPlayers = [{
   "TotalPoints": 281.6,
   "PointsLost": -92.1,
   "PointsGained": 293.3,
-    "country": 'USA'
-
+  "country": 'USA'
 }, {
   "PlayerSeasonID": 2022,
   "Season": 2018,
@@ -202,8 +192,7 @@ export const topPlayers = [{
   "TotalPoints": 304.6,
   "PointsLost": -174.5,
   "PointsGained": 255.1,
-    "country": 'USA'
-
+  "country": 'USA'
 }, {
   "PlayerSeasonID": 2040,
   "Season": 2018,
@@ -216,8 +205,7 @@ export const topPlayers = [{
   "TotalPoints": 291.6,
   "PointsLost": -99.8,
   "PointsGained": 252.5,
-    "country": 'USA'
-
+  "country": 'USA'
 }, {
   "PlayerSeasonID": 2039,
   "Season": 2018,
@@ -230,8 +218,7 @@ export const topPlayers = [{
   "TotalPoints": 289.2,
   "PointsLost": -100.8,
   "PointsGained": 238.8,
-    "country": 'USA'
-
+  "country": 'USA'
 }, {
   "PlayerSeasonID": 2017,
   "Season": 2018,
@@ -244,8 +231,7 @@ export const topPlayers = [{
   "TotalPoints": 272.7,
   "PointsLost": -179.1,
   "PointsGained": 218.5,
-    "country": 'Sweden'
-
+  "country": 'Sweden'
 }, {
   "PlayerSeasonID": 2023,
   "Season": 2018,
@@ -258,8 +244,7 @@ export const topPlayers = [{
   "TotalPoints": 282.8,
   "PointsLost": -105.3,
   "PointsGained": 186.3,
-    "country": 'USA'
-
+  "country": 'USA'
 }, {
   "PlayerSeasonID": 2004,
   "Season": 2018,
@@ -272,8 +257,7 @@ export const topPlayers = [{
   "TotalPoints": 265.1,
   "PointsLost": -289.1,
   "PointsGained": 116.9,
-    "country": 'Japan'
-
+  "country": 'Japan'
 }, {
   "PlayerSeasonID": 2013,
   "Season": 2018,
@@ -287,7 +271,6 @@ export const topPlayers = [{
   "PointsLost": -183.1,
   "PointsGained": 177.0, 
   "country": 'UK'
-
 }, {
   "PlayerSeasonID": 2037,
   "Season": 2018,
@@ -313,7 +296,6 @@ export const topPlayers = [{
   "PointsLost": -165.9,
   "PointsGained": 111.3,
   "country": 'Australia'
-
 }, {
   "PlayerSeasonID": 2008,
   "Season": 2018,
@@ -327,7 +309,6 @@ export const topPlayers = [{
   "PointsLost": -210.3,
   "PointsGained": 113.8,
   "country": 'Sweden'
-
 }, {
   "PlayerSeasonID": 2035,
   "Season": 2018,

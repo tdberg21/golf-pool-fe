@@ -8,7 +8,7 @@ const Home = () => {
       <div className='parallax first-parallax'></div>
       <div className='parallax-text-sections welcome-section'>
         <h2 className='welcome-header parallax-headers'>Hello, Friends.</h2>
-        <p>Click on the tournament link above to start a draft</p>
+        <p></p>
       </div>
       <div className='parallax second-parallax'></div>
       <div className='parallax-text-sections rules-section'>
