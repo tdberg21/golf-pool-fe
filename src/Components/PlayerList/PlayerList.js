@@ -26,7 +26,7 @@ class PlayerList extends Component {
   };
 
   displayCardsTopTwenty = () => {
-    let players = this.state.playerList;
+    let players = [...this.state.playerList];
     let shortList = players.splice(0, 18);
     let cardsToDisplay = shortList.map(player => {
       return <PlayerCard details={player} />
@@ -35,8 +35,8 @@ class PlayerList extends Component {
   };
 
   displayCardsSecondTwenty = () => {
-    let players = this.state.playerList;
-    let shortList = players.splice(0, 18);
+    let players = [...this.state.playerList];
+    let shortList = players.splice(18, 18);
     let cardsToDisplay = shortList.map(player => {
       return <PlayerCard details={player} />
     });
@@ -44,16 +44,16 @@ class PlayerList extends Component {
   };
 
   displayCardsThirdTwenty = () => {
-    let players = this.state.playerList;
-    let shortList = players.splice(0, 18);
+    let players = [...this.state.playerList];
+    let shortList = players.splice(36, 18);
     let cardsToDisplay = shortList.map(player => {
       return <PlayerCard details={player} />
     });
     return cardsToDisplay;
   };
   displayCardsFourthTwenty = () => {
-    let players = this.state.playerList;
-    let shortList = players.splice(0, 17);
+    let players = [...this.state.playerList];
+    let shortList = players.splice(54, 17);
     let cardsToDisplay = shortList.map(player => {
       return <PlayerCard details={player} />
     });
@@ -61,8 +61,8 @@ class PlayerList extends Component {
   };
 
   displayCardsLastTwenty = () => {
-    let players = this.state.playerList;
-    let shortList = players.splice(0, 19);
+    let players = [...this.state.playerList];
+    let shortList = players.splice(71, 19);
     let cardsToDisplay = shortList.map(player => {
       return <PlayerCard details={player} />
     });

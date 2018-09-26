@@ -1,0 +1,21 @@
+.login-form-container {
+  background: linear-gradient(
+      rgba(1, 23, 5, 0.4), 
+      rgba(1, 23, 5, 0.4)), url('https://www.desktopbackground.org/p/2014/08/07/805615_golf-rickie-fowler-exploits-players-2015-youtube_1920x1080_h.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-form {
+  background-color: rgb(243, 243, 243, .8);
+  width: 50%;
+  margin: 0em auto;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}

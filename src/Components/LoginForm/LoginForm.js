@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './LoginForm.css';
 
 class LoginForm extends Component {
   constructor() {
@@ -33,7 +34,6 @@ class LoginForm extends Component {
   render() {
     return (
       <div className='login-form-container'>
-      Please login!
       <form className='login-form' onSubmit={(event) => this.handleSubmit(event)}>
         <label for='username' className='labels username-label'>Username:</label>
           <input type='text' className='inputs username-input' name='username' value={this.state.username} placeholder='username' onChange={(event) => this.handleChange(event)}></input>
