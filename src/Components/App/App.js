@@ -22,8 +22,8 @@ class App extends Component {
         <header className="App-header">
           <NavLink to='/' className='logo'> d.g.p. </NavLink>
           <div className='links-container'>
-            <NavLink to='/tournaments' className='nav'> Tournaments </NavLink>
             <NavLink to='/draft' className='nav'> Draft </NavLink>
+            <NavLink to='/tournaments' className='nav'> Tournaments </NavLink>
             <NavLink to='/players' className='nav'> Players </NavLink>
             <NavLink to='/login' className='nav'> Login </NavLink>
           </div>

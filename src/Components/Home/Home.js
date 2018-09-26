@@ -14,8 +14,9 @@ const Home = () => {
       <div className='parallax-text-sections rules-section'>
         <h2 className='parallax-headers'>The Rules</h2>
         <p>The draft order is selected at random.</p>
-        <p>Each team will alternate picks and draft players until each team has 5 players.</p>
+        <p>Each team will drafting players until they has 5 players apiece.</p>
         <p>Only 4 players on each team will count towards the final score.</p>
+        <p>The MC rule has changed so much I honestly don't know what it is, just that you're f*cked.</p>
         <p>The team with the lowest cumulative score is the winner.</p>
       </div>
       <div className='parallax third-parallax'></div>
