@@ -1,0 +1,23 @@
+export const dustinJohnson = {
+  "PlayerID": 40000015,
+  "FirstName": "Dustin",
+  "LastName": "Johnson",
+  "Weight": 190,
+  "Swings": "R",
+  "PgaDebut": 2007,
+  "Country": "United States",
+  "BirthDate": "1984-06-22T00:00:00",
+  "BirthCity": "Columbia",
+  "BirthState": "South Carolina",
+  "College": "Coastal Carolina University",
+  "PhotoUrl": "https:\/\/s3-us-west-2.amazonaws.com\/static.fantasydata.com\/headshots\/golf\/low-res\/40000015.png",
+  "SportRadarPlayerID": "a7041051-eb25-40b9-acb3-dab88cae69c0",
+  "PgaTourPlayerID": 30925,
+  "RotoworldPlayerID": 1249,
+  "RotoWirePlayerID": null,
+  "FantasyAlarmPlayerID": null,
+  "DraftKingsName": "Dustin Johnson",
+  "FantasyDraftName": "Dustin Johnson",
+  "FanDuelName": "Dustin Johnson",
+  "FantasyDraftPlayerID": 1242318
+}
