@@ -35,7 +35,7 @@ class App extends Component {
         <Route path='/tournaments/:id' render={({ match }) => {
           return <TournamentDetails id={match.params.id} />;
         }} />
-        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet"></link>
       </div>
     );
   }

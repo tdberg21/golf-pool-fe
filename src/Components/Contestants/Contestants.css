@@ -1,8 +1,12 @@
+.contestants-section {
+  padding: 30px 20px;
+}
+
 .contestants-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 2em;
+  margin: 1.5em;
 }
 
 .contestants-card {
@@ -10,7 +14,7 @@
   border: 1px solid #fff;
   margin: 25px 10px 40px 10px;
   background-color: rgba(11, 62, 21, 0.392);
-  border-radius: 2px;
+  border-radius: 5px;
   padding: 5px 0;
 }
 

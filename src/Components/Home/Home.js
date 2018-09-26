@@ -23,6 +23,7 @@ const Home = () => {
         <h2 className='parallax-headers'>The Contestants</h2>
         <Contestants />
       </div>
+      <div className='parallax fourth-parallax'></div>
     </div>
   )
 }

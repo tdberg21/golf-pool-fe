@@ -12,22 +12,31 @@
 }
 
 .second-parallax {
-  background-image: url('https://3989ac5bcbe1edfc864a-0a7f10f87519dba22d2dbc6233a731e5.ssl.cf2.rackcdn.com/infitbody/Torrey_Pines.jpeg')
+  background-image: url('https://www.desktopbackground.org/p/2015/07/05/974524_augusta-national_800x500_h.jpg')
 }
 
 .third-parallax {
-  background-image: url('https://g2gcollection.com/wp-content/uploads/2015/10/St_Andrews-Old_Course-sm.jpg')
+  background-image: url('https://www.desktopbackground.org/p/2013/04/28/567868_augusta-national-wallpapers-wallpapers-cave_1280x960_h.jpg')
+}
+
+.fourth-parallax {
+  background-image: url('https://www.desktopbackground.org/p/2015/07/05/974524_augusta-national_800x500_h.jpg')
 }
 
 .parallax-text-sections {
   margin-bottom: -20px;
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   background-color: #011705;
   color: #fff;
 }
 
 .parallax-headers {
+  vertical-align: middle;
   margin: 0;
+  font-size: 1.3em;
+}
+
+.welcome-header {
   padding-top: 10px;
 }
