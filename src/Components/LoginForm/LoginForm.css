@@ -12,7 +12,7 @@
 
 .login-form {
   background-color: rgb(243, 243, 243, .65);
-  width: 28%;
+  width: 25%;
   margin: 1em auto;
   min-height: 50px;
   display: flex;
@@ -23,12 +23,22 @@
 }
 
 .inputs {
-  width: 75%;
+  width: 82%;
   margin-bottom: 10px;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 8px;
+  color: #283e4a;
 }
 
 label {
   margin-bottom: 8px;
   font-weight: 600;
+}
+
+.login-button {
+  color: #fff;
+  background-color: darkgreen;
+
 }
 

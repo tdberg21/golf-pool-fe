@@ -30,6 +30,7 @@
 
 .career-wins {
   font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .contestant-image {
@@ -40,4 +41,5 @@
 
 .results {
   text-decoration: underline;
+  font-weight: 600;
 }
