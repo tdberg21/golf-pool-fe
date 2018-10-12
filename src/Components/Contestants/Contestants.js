@@ -6,7 +6,7 @@ import './Contestants.css';
 const Contestants = (props) => {
   const contestantsToDisplay = contestants.map((player, index) => {
     return (
-      <div className='contestants-card'>
+      <div className='contestants-card' key={index}>
         <Link to={`/contestants/${player.id}`} className='card-link'>
           <div value={player.id}>
             <h4 className='contestants-text contestant-name'>{player.name}</h4>
