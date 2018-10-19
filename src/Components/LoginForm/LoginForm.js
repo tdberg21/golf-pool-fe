@@ -35,9 +35,9 @@ class LoginForm extends Component {
     return (
       <div className='login-form-container'>
       <form className='login-form' onSubmit={(event) => this.handleSubmit(event)}>
-        <label for='username' className='labels username-label'>Username:</label>
+        <label htmlFor='username' className='labels username-label'>Username:</label>
           <input type='text' className='inputs username-input' name='username' value={this.state.username} placeholder='Username' onChange={(event) => this.handleChange(event)}></input>
-        <label for='password' className='labels password-label'>Password:</label>
+        <label htmlFor='password' className='labels password-label'>Password:</label>
         <input type='password' className='inputs password-input' name='password' value={this.state.password} placeholder='Password' onChange={(event) => this.handleChange(event)}></input>
         <button type='submit' className='buttons login-button'>Login</button>
       </form>

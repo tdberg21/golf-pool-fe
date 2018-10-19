@@ -28,8 +28,8 @@ class PlayerList extends Component {
   displayCardsTopTwenty = () => {
     let players = [...this.state.playerList];
     let shortList = players.splice(0, 18);
-    let cardsToDisplay = shortList.map(player => {
-      return <PlayerCard details={player} />
+    let cardsToDisplay = shortList.map((player, index) => {
+      return <PlayerCard details={player} key={index} />
     });
     return cardsToDisplay;
   };
@@ -37,8 +37,8 @@ class PlayerList extends Component {
   displayCardsSecondTwenty = () => {
     let players = [...this.state.playerList];
     let shortList = players.splice(18, 18);
-    let cardsToDisplay = shortList.map(player => {
-      return <PlayerCard details={player} />
+    let cardsToDisplay = shortList.map((player, index) => {
+      return <PlayerCard details={player} key={index} />
     });
     return cardsToDisplay;
   };
@@ -46,16 +46,16 @@ class PlayerList extends Component {
   displayCardsThirdTwenty = () => {
     let players = [...this.state.playerList];
     let shortList = players.splice(36, 18);
-    let cardsToDisplay = shortList.map(player => {
-      return <PlayerCard details={player} />
+    let cardsToDisplay = shortList.map((player, index) => {
+      return <PlayerCard details={player} key={index} />
     });
     return cardsToDisplay;
   };
   displayCardsFourthTwenty = () => {
     let players = [...this.state.playerList];
     let shortList = players.splice(54, 17);
-    let cardsToDisplay = shortList.map(player => {
-      return <PlayerCard details={player} />
+    let cardsToDisplay = shortList.map((player, index) => {
+      return <PlayerCard details={player} key={index} />
     });
     return cardsToDisplay;
   };
@@ -63,8 +63,8 @@ class PlayerList extends Component {
   displayCardsLastTwenty = () => {
     let players = [...this.state.playerList];
     let shortList = players.splice(71, 19);
-    let cardsToDisplay = shortList.map(player => {
-      return <PlayerCard details={player} />
+    let cardsToDisplay = shortList.map((player, index) => {
+      return <PlayerCard details={player} key={index} />
     });
     return cardsToDisplay;
   };
