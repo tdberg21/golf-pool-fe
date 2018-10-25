@@ -17,37 +17,37 @@ const dateCleaner = date => {
 }
 
 const findMonth = number => {
-  if (number === 1) {
+  if (number === '01') {
     return 'January'
   }
-  if (number === 2) {
+  if (number === '02') {
     return 'February'
   }
-  if (number === 3) {
+  if (number === '03') {
     return 'March'
   }
-  if (number === 4) {
+  if (number === '04') {
     return 'April'
   }
-  if (number === 5) {
+  if (number === '05') {
     return 'May'
   }
-  if (number === 6) {
+  if (number === '06') {
     return 'June'
   }
-  if (number === 7) {
+  if (number === '07') {
     return 'July'
   }
-  if (number === 8) {
+  if (number === '08') {
     return 'August'
   }
-  if (number === 9) {
+  if (number === '09') {
     return 'September'
   }
-  if (number === 10) {
+  if (number === '10') {
     return 'October'
   }
-  if (number === 11) {
+  if (number === '11') {
     return 'November'
   }
   if (number === 12) {
