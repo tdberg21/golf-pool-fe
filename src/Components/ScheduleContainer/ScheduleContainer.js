@@ -21,10 +21,9 @@ class ScheduleContainer extends Component {
   handleGetTournaments = async () => {
     // const tournamentsResponse = await fetchTournaments();
     const cleanTourns = scrubTournaments(schedule.tournaments).reverse();
-    console.log(cleanTourns[1])
     
     this.setState({
-      tournaments: cleanTourns.splice(0, 12)
+      tournaments: cleanTourns
     });
   }
 
