@@ -6,6 +6,7 @@ import ScheduleContainer from '../ScheduleContainer/ScheduleContainer';
 import TournamentDetails from '../TournamentDetails/TournamentDetails';
 import LoginForm from '../LoginForm/LoginForm';
 import PlayerList from '../PlayerList/PlayerList';
+// var socket = io();
 
 class App extends Component {
   constructor() {
