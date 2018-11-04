@@ -6,6 +6,8 @@ import ScheduleContainer from '../ScheduleContainer/ScheduleContainer';
 import TournamentDetails from '../TournamentDetails/TournamentDetails';
 import LoginForm from '../LoginForm/LoginForm';
 import PlayerList from '../PlayerList/PlayerList';
+import ContestantDetails from '../ContestantDetails/ContestantDetails.js';
+// var socket = io();
 
 class App extends Component {
   constructor() {
@@ -34,6 +36,9 @@ class App extends Component {
         <Route exact path='/players' component={PlayerList} />
         <Route path='/tournaments/:id' render={({ match }) => {
           return <TournamentDetails id={match.params.id} />;
+        }} />
+        <Route path='/contestants/:id' render={({ match }) => {
+          return <ContestantDetails id={match.params.id} />;
         }} />
         <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet"></link>
       </div>
