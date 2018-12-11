@@ -9,7 +9,7 @@ import PlayerList from '../PlayerList/PlayerList';
 import ContestantDetails from '../ContestantDetails/ContestantDetails.js';
 
 import io from 'socket.io-client';
-var socket = io.connect('http://localhost:3002');
+var socket = io.connect('http://localhost:3001');
 
 class App extends Component {
   constructor() {
