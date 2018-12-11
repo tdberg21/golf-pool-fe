@@ -7,7 +7,9 @@ import TournamentDetails from '../TournamentDetails/TournamentDetails';
 import LoginForm from '../LoginForm/LoginForm';
 import PlayerList from '../PlayerList/PlayerList';
 import ContestantDetails from '../ContestantDetails/ContestantDetails.js';
-// var socket = io();
+
+import io from 'socket.io-client';
+var socket = io.connect('http://localhost:3002');
 
 class App extends Component {
   constructor() {
@@ -16,6 +18,16 @@ class App extends Component {
     this.state = {
       tournaments: []
     }
+  }
+
+  componentDidMount() {
+    socket.on('connect', () => {
+      console.log('You have been connected!');
+      socket.send({
+        username: 'Bob Loblaw',
+        text: 'Check out my law blog.'
+      });
+    });
   }
 
   render() {
