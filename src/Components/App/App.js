@@ -7,9 +7,18 @@ import TournamentDetails from '../TournamentDetails/TournamentDetails';
 import LoginForm from '../LoginForm/LoginForm';
 import PlayerList from '../PlayerList/PlayerList';
 import ContestantDetails from '../ContestantDetails/ContestantDetails.js';
+import Draft from '../Draft/Draft';
 
 import io from 'socket.io-client';
 var socket = io.connect('http://localhost:3001');
+
+socket.on('connect', () => {
+  console.log('You have been connected!');
+  socket.send({
+    username: 'Bob Loblaw',
+    text: 'Check out my law blog.'
+  });
+});
 
 class App extends Component {
   constructor() {
@@ -18,16 +27,6 @@ class App extends Component {
     this.state = {
       tournaments: []
     }
-  }
-
-  componentDidMount() {
-    socket.on('connect', () => {
-      console.log('You have been connected!');
-      socket.send({
-        username: 'Bob Loblaw',
-        text: 'Check out my law blog.'
-      });
-    });
   }
 
   render() {
@@ -46,6 +45,7 @@ class App extends Component {
         <Route exact path='/tournaments' component={ScheduleContainer} />
         <Route exact path='/login' component={LoginForm} />
         <Route exact path='/players' component={PlayerList} />
+        <Route exact path='/draft' component={Draft} />
         <Route path='/tournaments/:id' render={({ match }) => {
           return <TournamentDetails id={match.params.id} />;
         }} />
