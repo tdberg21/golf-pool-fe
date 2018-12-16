@@ -9,6 +9,23 @@ export const scrubTournaments = tournies => {
   })
 }
 
+export const scrubGolfers = rawGolfers => {
+  return rawGolfers.map(golfer => {
+    const name = golfer["Name"].split(' ');
+    const first_name = name[0];
+    const last_name = name[name.length - 1];
+
+    return {
+      api_id: golfer.PlayerID,
+      first_name,
+      last_name,
+      country: golfer.country,
+      rank: golfer.WorldGolfRank,
+      last_rank: golfer.WorldGolfRankLastWeek
+    }
+  })
+}
+
 const dateCleaner = date => {
   const splitDate = date.split('-');
   let month = findMonth(splitDate[1]);
