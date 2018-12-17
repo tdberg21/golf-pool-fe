@@ -10,23 +10,21 @@ import ContestantDetails from '../ContestantDetails/ContestantDetails.js';
 import Draft from '../Draft/Draft';
 
 import io from 'socket.io-client';
-var socket = io.connect('http://localhost:3001');
 
-socket.on('connect', () => {
-  console.log('You have been connected!');
-  socket.send({
-    username: 'Bob Loblaw',
-    text: 'Check out my law blog.'
-  });
-});
+// var socket = io.connect('http://localhost:3001');
 
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      tournaments: []
+      tournaments: [],
+      loggedIn: null
     }
+  }
+
+  loginPlayer = (player) => {
+    this.setState({loggedIn: player})
   }
 
   render() {
@@ -43,9 +41,9 @@ class App extends Component {
         </header>
         <Route exact path='/' component={Home} />
         <Route exact path='/tournaments' component={ScheduleContainer} />
-        <Route exact path='/login' component={LoginForm} />
+        <Route exact path='/login' render={(props) => <LoginForm {...props} loginPlayer={this.loginPlayer}/>} />
         <Route exact path='/players' component={PlayerList} />
-        <Route exact path='/draft' component={Draft} />
+        <Route exact path='/draft' render={(props) => <Draft {...props} currentUser={ this.state.loggedIn }/>} />
         <Route path='/tournaments/:id' render={({ match }) => {
           return <TournamentDetails id={match.params.id} />;
         }} />
