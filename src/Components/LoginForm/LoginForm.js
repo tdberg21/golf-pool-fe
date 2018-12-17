@@ -18,8 +18,22 @@ class LoginForm extends Component {
     }) 
   }
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
+    const options = {
+      method: "POST",
+      headers: {
+       "Content-Type": "application/json; charset=utf-8"
+             },
+      body: JSON.stringify({
+        username: this.state.username,
+        password: this.state.password
+      })
+    }
+    let rawUser = await fetch('http://localhost:3001/api/v1/users', options);
+    let user = await rawUser.json();
+
+    this.props.loginPlayer(user);
     this.clearInputFields();
   }
 
