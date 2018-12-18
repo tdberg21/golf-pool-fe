@@ -1,0 +1,31 @@
+.Draft {
+  padding-top: 1rem;
+}
+
+.draft-sections {
+  width: 100%;
+}
+
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.bottom-section {
+  width: 98%;
+  margin: 2rem auto;
+}
+
+.draft-containers {
+  min-height: 10vh;
+  border: 1px solid black;
+}
+
+.draft-tourn-details-container {
+  width: 58%;
+}
+
+.draft-order-container {
+  width: 38%;
+}
