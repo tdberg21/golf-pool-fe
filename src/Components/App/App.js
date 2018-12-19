@@ -8,25 +8,23 @@ import LoginForm from '../LoginForm/LoginForm';
 import PlayerList from '../PlayerList/PlayerList';
 import ContestantDetails from '../ContestantDetails/ContestantDetails.js';
 import Draft from '../Draft/Draft';
-
-import io from 'socket.io-client';
-var socket = io.connect('http://localhost:3001');
-
-socket.on('connect', () => {
-  console.log('You have been connected!');
-  socket.send({
-    username: 'Bob Loblaw',
-    text: 'Check out my law blog.'
-  });
-});
+import { fetchUser } from '../../helpers/apiCalls.js';
 
 class App extends Component {
   constructor() {
     super();
 
     this.state = {
-      tournaments: []
+      tournaments: [],
+      myId: null
     }
+  }
+
+  handleLogin = async (username, password) => {
+    let login = await fetchUser(username, password)
+    console.log(login)
+    this.setState({myId: login.id})
+    return login;
   }
 
   render() {
@@ -43,9 +41,13 @@ class App extends Component {
         </header>
         <Route exact path='/' component={Home} />
         <Route exact path='/tournaments' component={ScheduleContainer} />
-        <Route exact path='/login' component={LoginForm} />
+        <Route exact path='/login' render={() => {
+          return <LoginForm handleLogin={this.handleLogin} handleLogout={this.handleLogout} />;
+        }} />
         <Route exact path='/players' component={PlayerList} />
-        <Route exact path='/draft' component={Draft} />
+        <Route exact path='/draft' render={() => {
+          return <Draft myId={this.state.myId} />;
+        }} />
         <Route path='/tournaments/:id' render={({ match }) => {
           return <TournamentDetails id={match.params.id} />;
         }} />
