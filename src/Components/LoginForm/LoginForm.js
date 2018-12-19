@@ -20,6 +20,7 @@ class LoginForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
+    this.props.handleLogin(this.state.username, this.state.password)
     this.clearInputFields();
   }
 
@@ -29,7 +30,6 @@ class LoginForm extends Component {
       password: ''
     });
   }
-
 
   render() {
     return (
