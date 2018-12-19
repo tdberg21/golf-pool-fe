@@ -3,6 +3,7 @@ import { Route, withRouter, NavLink } from 'react-router-dom';
 import io from 'socket.io-client';
 import './Draft.css';
 import { fetchTournamentSummary } from '../../helpers/apiCalls.js';
+import { mastersData } from '../../helpers/mastersData.js';
 
 let socket = io.connect('http://localhost:3001');
 
@@ -33,7 +34,7 @@ class Draft extends Component {
     const response = await fetch('http://localhost:3001/api/v1/golfers')
     let golfers = await response.json();
     let tournament = {
-      name: await golfers[0].tournament, id: await golfers[0].tournament_id}
+      name: mastersData.name, id: mastersData.id, date: mastersData.start_date, venue: mastersData.venue.name}
 
     this.setState({ 
       golfers,
@@ -44,8 +45,8 @@ class Draft extends Component {
   displayGolfers = () => {
     return this.state.golfers.map((golfer, index) => {
       return (
-        <div className='draft-golfer-card'>
-          <h4 className={`golfer-draft-card ${golfer.country.toLowerCase()}`}>{golfer.first_name} {golfer.last_name}</h4>
+        <div className={`golfer-draft-card ${golfer.country.toLowerCase()}`} key={index} onClick={() => this.handleDraftPlayer(golfer.api_id)}>
+          <h4 className='golfer-draft-text'>{golfer.first_name} {golfer.last_name}</h4>
         </div>
       )
     })
@@ -53,12 +54,25 @@ class Draft extends Component {
 
   displayTeam = () => {
     return this.state.players.map((golfer, index) => {
+      console.log(golfer)
       return (
-        <div className='draft-golfer-card'>
-          <h4 className={`golfer-draft-card ${golfer.country.toLowerCase()}`}>{golfer.first_name} {golfer.last_name}</h4>
+        <div className={`golfer-draft-card ${golfer.country.toLowerCase()}`} key={index} >
+          <h4 className='golfer-draft-text'>{golfer.first_name} {golfer.last_name}</h4>
         </div>
       )
     })
+  }
+
+  handleDraftPlayer = async (golferId) => {
+    console.log(golferId);
+    let draftedPlayer = this.state.golfers.filter(golfer => {
+      return golfer.api_id === golferId
+    });
+    let undraftedPlayers = this.state.golfers.filter(golfer => {
+      return golfer.api_id !== golferId
+    });
+    
+    this.setState({golfers: undraftedPlayers, players: [...draftedPlayer, ...this.state.players]})
   }
 
   render() {
@@ -75,6 +89,7 @@ class Draft extends Component {
             <div className='draft-tourn-details-container draft-containers'>
               Current Tournament details...
             <h2 className='draft-tourn-details-text'>{this.state.tournament.name}</h2>
+            <p className='draft-tourn-details-text'>{this.state.tournament.venue}</p>
             </div>
             <div className='draft-order-container draft-containers'>
               List Draft order for current draft...
