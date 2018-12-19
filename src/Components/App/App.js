@@ -27,6 +27,10 @@ class App extends Component {
     return login;
   }
 
+  handleLogout = () => {
+    this.setState({myId: null});
+  }
+
   render() {
     return (
       <div className="App">
@@ -36,7 +40,7 @@ class App extends Component {
             <NavLink to='/draft' className='nav'> Draft </NavLink>
             <NavLink to='/tournaments' className='nav'> Tournaments </NavLink>
             <NavLink to='/players' className='nav'> Players </NavLink>
-            <NavLink to='/login' className='nav'> Login </NavLink>
+            <NavLink to='/login' className='nav'> {this.state.myId ? <a className='log-out' onClick={this.handleLogout}>Logout</a> : 'Login'} </NavLink>
           </div>
         </header>
         <Route exact path='/' component={Home} />
