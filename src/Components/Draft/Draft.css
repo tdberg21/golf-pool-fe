@@ -13,11 +13,11 @@
 }
 
 .bottom-section {
-  width: 98%;
-  margin: 1rem auto;
+  width: 97.5%;
+  margin: 0.6rem auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .draft-containers {
@@ -39,4 +39,8 @@
 
 .drafted-players-container {
   width: 34%;
+}
+
+.golfer-draft-card {
+  min-height: 2rem;
 }

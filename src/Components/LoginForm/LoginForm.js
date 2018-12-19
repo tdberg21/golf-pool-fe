@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import './LoginForm.css';
 
 class LoginForm extends Component {
@@ -18,10 +19,15 @@ class LoginForm extends Component {
     }) 
   }
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
-    this.props.handleLogin(this.state.username, this.state.password)
-    this.clearInputFields();
+    const response = await this.props.handleLogin(this.state.username, this.state.password);
+    if (response.username) {
+      this.props.history.push('/');
+    } else {
+      // display error message
+      this.clearInputFields();
+    }
   }
 
   clearInputFields = () => {
@@ -46,4 +52,4 @@ class LoginForm extends Component {
   }
 }
 
-export default LoginForm;
+export default withRouter(LoginForm);
