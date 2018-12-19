@@ -14,11 +14,14 @@
 
 .bottom-section {
   width: 98%;
-  margin: 2rem auto;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .draft-containers {
-  min-height: 10vh;
+  min-height: 15vh;
   border: 1px solid black;
 }
 
@@ -28,4 +31,12 @@
 
 .draft-order-container {
   width: 38%;
+}
+
+.undrafted-players-container {
+  width: 64%;
+}
+
+.drafted-players-container {
+  width: 34%;
 }
