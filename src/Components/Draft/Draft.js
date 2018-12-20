@@ -9,11 +9,15 @@ let socket = io.connect('http://localhost:3001');
 
 socket.on('connect', () => {
   console.log('You have been connected!');
-  socket.send({
-    username: 'Big Dick Eldrick Woods',
-    text: 'Time to eat boys'
-  });
+
 });
+
+socket.on('error', function (err) {
+  console.log('received socket error:')
+  console.log(err)
+})
+
+
 
 class Draft extends Component {
   constructor(props) {
@@ -24,7 +28,9 @@ class Draft extends Component {
       myId: 'taco',
       golfers: [],
       players: [],
-      tournament: {}
+      tournament: {},
+      chatText: '',
+      chatHistory: []
     }
   }
 
@@ -36,6 +42,21 @@ class Draft extends Component {
     if (this.props.myId) {
       this.setState({ myId: this.props.myId})
     }
+
+    socket.on('chatHistory', chatHistory => {
+      let tester = chatHistory.map(i => {
+        return i;
+      })
+      this.setState({ chatHistory })
+    })
+
+    socket.on('message', message => {
+      let { chatHistory } = this.state;
+
+      chatHistory.push(message);
+      this.setState({ chatHistory });
+    })
+
   }
 
   displayGolfers = () => {
@@ -89,6 +110,32 @@ class Draft extends Component {
     }
   }
 
+  handleChatChange = (event) => {
+    let chatText = event.target.value;
+
+    this.setState({ chatText });
+  }
+
+  handleChatSubmit = (event) => {
+    event.preventDefault();
+    socket.send({
+      username: this.state.myId,
+      text: this.state.chatText
+    })
+    this.setState({chatText: ''})
+  }
+
+  chatBoxContent = () => {
+    return this.state.chatHistory.map((message, i) => {
+      return (
+        <li className='chat-box-message' key={ Date.now() + i }>
+          <span>{ message.username }: </span>
+          <span>{ message.text }</span>
+        </li>
+      )
+    })
+  }
+
   render() {
     if (!this.state.myId) {
       return (
@@ -123,6 +170,15 @@ class Draft extends Component {
               My Team
               {this.displayTeam()}
             </div>
+          </section>
+          <section className='chat-window'>
+            <ul className='chat-feed'>
+              { this.chatBoxContent() }
+            </ul>
+            <form className='chat-form' onSubmit={this.handleChatSubmit} >
+              <input className='chat-input' value={this.state.chatText} onChange={this.handleChatChange}/>
+              <button className='chat-submit-button'>Send</button>
+            </form>
           </section>
         </div>
       )
