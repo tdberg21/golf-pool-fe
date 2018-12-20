@@ -1,2054 +1,682 @@
-export const schedule = {
-  "tour": {
-    "id": "b52068af-28e4-4e91-bdbb-037591b0ff84",
-    "alias": "pga",
-    "name": "PGA Tour"
-  },
-  "season": {
-    "id": "dbc9bbb1-e51c-47bc-8f72-be7598ffbf7e",
-    "year": 2018
-  },
-  "tournaments": [{
-    "id": "19ed4286-74b9-4ad6-9f58-473c41437bc1",
-    "name": "World Golf Championships-HSBC Champions",
-    "event_type": "stroke",
-    "purse": 9750000.0,
-    "winning_share": 1660000.0,
-    "currency": "USD",
-    "points": 550,
-    "start_date": "2017-10-25",
-    "end_date": "2017-10-29",
-    "course_timezone": "Asia/Shanghai",
-    "venue": {
-      "id": "0b919d8b-b97a-4549-a021-95dff524ea4d",
-      "name": "Sheshan International GC",
-      "city": "Shanghai",
-      "country": "CHN",
-      "courses": [{
-        "id": "948b5293-06f5-4261-a419-50f1c0f9acd6",
-        "name": "Sheshan International GC",
-        "yardage": 7266,
-        "par": 72,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 459
-        }, {
-          "number": 2,
-          "par": 5,
-          "yardage": 550
-        }, {
-          "number": 3,
-          "par": 4,
-          "yardage": 362
-        }, {
-          "number": 4,
-          "par": 3,
-          "yardage": 200
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 456
-        }, {
-          "number": 6,
-          "par": 3,
-          "yardage": 200
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 346
-        }, {
-          "number": 8,
-          "par": 5,
-          "yardage": 603
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 486
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 401
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 456
-        }, {
-          "number": 12,
-          "par": 3,
-          "yardage": 217
-        }, {
-          "number": 13,
-          "par": 4,
-          "yardage": 411
-        }, {
-          "number": 14,
-          "par": 5,
-          "yardage": 594
-        }, {
-          "number": 15,
-          "par": 4,
-          "yardage": 487
-        }, {
-          "number": 16,
-          "par": 4,
-          "yardage": 288
-        }, {
-          "number": 17,
-          "par": 3,
-          "yardage": 212
-        }, {
-          "number": 18,
-          "par": 5,
-          "yardage": 538
-        }]
-      }]
+export const majors = [{
+  "id": "fdf12aec-74d2-4f2e-9e0b-00481a32fd34",
+  "name": "Masters Tournament",
+  "event_type": "stroke",
+  "purse": 11000000.0,
+  "winning_share": 1980000.0,
+  "currency": "USD",
+  "points": 600,
+  "start_date": "2019-04-11",
+  "end_date": "2019-04-14",
+  "course_timezone": "US/Eastern",
+  "seasons": [{
+    "id": "42cb037c-a813-49b3-a64e-1355e7bf4038",
+    "year": 2019,
+    "tour": {
+      "id": "b52068af-28e4-4e91-bdbb-037591b0ff84",
+      "alias": "pga",
+      "name": "PGA Tour"
     }
   }, {
-    "id": "e62314d0-ecbe-4fa1-87a7-90f91c575e6b",
-    "name": "Hero World Challenge",
-    "event_type": "stroke",
-    "purse": 3500000.0,
-    "winning_share": 1000000.0,
-    "currency": "USD",
-    "start_date": "2017-11-30",
-    "end_date": "2017-12-03",
-    "course_timezone": "America/Nassau",
-    "venue": {
-      "id": "dad50639-c1a2-47fa-8928-47caf967caec",
-      "name": "Albany, The Bahamas",
-      "city": "Nassau",
-      "country": "BHS",
-      "courses": [{
-        "id": "8e7b2522-16ff-4be0-aeb0-f480a2f03c18",
-        "name": "Albany",
-        "yardage": 7302,
-        "par": 72,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 423
-        }, {
-          "number": 2,
-          "par": 3,
-          "yardage": 187
-        }, {
-          "number": 3,
-          "par": 5,
-          "yardage": 572
-        }, {
-          "number": 4,
-          "par": 4,
-          "yardage": 492
-        }, {
-          "number": 5,
-          "par": 3,
-          "yardage": 180
-        }, {
-          "number": 6,
-          "par": 5,
-          "yardage": 595
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 340
-        }, {
-          "number": 8,
-          "par": 3,
-          "yardage": 216
-        }, {
-          "number": 9,
-          "par": 5,
-          "yardage": 603
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 435
-        }, {
-          "number": 11,
-          "par": 5,
-          "yardage": 589
-        }, {
-          "number": 12,
-          "par": 3,
-          "yardage": 202
-        }, {
-          "number": 13,
-          "par": 4,
-          "yardage": 483
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 298
-        }, {
-          "number": 15,
-          "par": 5,
-          "yardage": 548
-        }, {
-          "number": 16,
-          "par": 4,
-          "yardage": 485
-        }, {
-          "number": 17,
-          "par": 3,
-          "yardage": 184
-        }, {
-          "number": 18,
-          "par": 4,
-          "yardage": 470
-        }]
-      }]
+    "id": "6a06d55e-0f07-4b5b-8abf-c228fa554c4c",
+    "year": 2019,
+    "tour": {
+      "id": "e97bb87a-6347-40d0-8c8c-3d0f54a41043",
+      "alias": "EURO",
+      "name": "European Tour"
     }
-  }, {
-    "id": "d41c4833-caea-4247-a1b9-c9ccc48d9e08",
-    "name": "Farmers Insurance Open",
-    "event_type": "stroke",
-    "purse": 6900000.0,
-    "winning_share": 1242000.0,
-    "currency": "USD",
-    "points": 500,
-    "start_date": "2018-01-25",
-    "end_date": "2018-01-28",
-    "course_timezone": "US/Pacific",
-    "venue": {
-      "id": "1c12ad8a-336e-40a6-90bb-50b86321c0f9",
-      "name": "Torrey Pines",
-      "city": "La Jolla",
-      "state": "CA",
-      "zipcode": "92037",
-      "country": "USA",
-      "courses": [{
-        "id": "5401065a-a685-4aeb-a9d7-602d9a3690d0",
-        "name": "TORREY PINES - SOUTH",
-        "yardage": 7569,
-        "par": 72,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 452
-        }, {
-          "number": 2,
-          "par": 4,
-          "yardage": 387
-        }, {
-          "number": 3,
-          "par": 3,
-          "yardage": 198
-        }, {
-          "number": 4,
-          "par": 4,
-          "yardage": 471
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 453
-        }, {
-          "number": 6,
-          "par": 5,
-          "yardage": 560
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 462
-        }, {
-          "number": 8,
-          "par": 3,
-          "yardage": 176
-        }, {
-          "number": 9,
-          "par": 5,
-          "yardage": 613
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 405
-        }, {
-          "number": 11,
-          "par": 3,
-          "yardage": 221
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 477
-        }, {
-          "number": 13,
-          "par": 5,
-          "yardage": 541
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 435
-        }, {
-          "number": 15,
-          "par": 4,
-          "yardage": 477
-        }, {
-          "number": 16,
-          "par": 3,
-          "yardage": 227
-        }, {
-          "number": 17,
-          "par": 4,
-          "yardage": 442
-        }, {
-          "number": 18,
-          "par": 5,
-          "yardage": 572
-        }]
+  }],
+  "venue": {
+    "id": "d555598a-aed0-44fe-b659-4250264c7820",
+    "name": "Augusta National Golf Club",
+    "city": "Augusta",
+    "state": "GA",
+    "zipcode": "30904",
+    "country": "USA",
+    "courses": [{
+      "id": "7e9462a5-66ea-4205-b37a-81884e3653cf",
+      "name": "Augusta National",
+      "yardage": 7435,
+      "par": 72,
+      "holes": [{
+        "number": 1,
+        "par": 4,
+        "yardage": 445,
+        "description": "Tea Olive"
       }, {
-        "id": "9034c516-80ec-4670-9345-ed8a6b29904b",
-        "name": "TORREY PINES - NORTH",
-        "yardage": 6874,
-        "par": 72,
-        "holes": [{
-          "number": 1,
-          "par": 5,
-          "yardage": 520
-        }, {
-          "number": 2,
-          "par": 4,
-          "yardage": 326
-        }, {
-          "number": 3,
-          "par": 3,
-          "yardage": 121
-        }, {
-          "number": 4,
-          "par": 4,
-          "yardage": 429
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 412
-        }, {
-          "number": 6,
-          "par": 3,
-          "yardage": 206
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 400
-        }, {
-          "number": 8,
-          "par": 4,
-          "yardage": 436
-        }, {
-          "number": 9,
-          "par": 5,
-          "yardage": 548
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 416
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 467
-        }, {
-          "number": 12,
-          "par": 3,
-          "yardage": 190
-        }, {
-          "number": 13,
-          "par": 4,
-          "yardage": 469
-        }, {
-          "number": 14,
-          "par": 5,
-          "yardage": 507
-        }, {
-          "number": 15,
-          "par": 4,
-          "yardage": 397
-        }, {
-          "number": 16,
-          "par": 4,
-          "yardage": 338
-        }, {
-          "number": 17,
-          "par": 3,
-          "yardage": 172
-        }, {
-          "number": 18,
-          "par": 5,
-          "yardage": 520
-        }]
-      }]
-    }
-  }, {
-    "id": "214384e9-0ce4-4b05-8ff3-56f9f1a4b995",
-    "name": "Waste Management Phoenix Open",
-    "event_type": "stroke",
-    "purse": 6900000.0,
-    "winning_share": 1242000.0,
-    "currency": "USD",
-    "points": 500,
-    "start_date": "2018-02-01",
-    "end_date": "2018-02-04",
-    "course_timezone": "US/Arizona",
-    "venue": {
-      "id": "6fe9c022-1950-4554-bb26-30f3ca4d7795",
-      "name": "TPC Scottsdale",
-      "city": "Scottsdale",
-      "state": "AZ",
-      "zipcode": "85255",
-      "country": "USA",
-      "courses": [{
-        "id": "0cb81277-553c-4da0-9d25-255ea368f9ac",
-        "name": "Stadium Course",
-        "yardage": 7216,
-        "par": 71,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 410
-        }, {
-          "number": 2,
-          "par": 4,
-          "yardage": 416
-        }, {
-          "number": 3,
-          "par": 5,
-          "yardage": 554
-        }, {
-          "number": 4,
-          "par": 3,
-          "yardage": 175
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 453
-        }, {
-          "number": 6,
-          "par": 4,
-          "yardage": 431
-        }, {
-          "number": 7,
-          "par": 3,
-          "yardage": 215
-        }, {
-          "number": 8,
-          "par": 4,
-          "yardage": 470
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 464
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 403
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 469
-        }, {
-          "number": 12,
-          "par": 3,
-          "yardage": 195
-        }, {
-          "number": 13,
-          "par": 5,
-          "yardage": 595
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 476
-        }, {
-          "number": 15,
-          "par": 5,
-          "yardage": 558
-        }, {
-          "number": 16,
-          "par": 3,
-          "yardage": 162
-        }, {
-          "number": 17,
-          "par": 4,
-          "yardage": 332
-        }, {
-          "number": 18,
-          "par": 4,
-          "yardage": 438
-        }]
+        "number": 2,
+        "par": 5,
+        "yardage": 575,
+        "description": "Pink Dogwood"
       }, {
-        "id": "c9612cf4-789e-42be-ba23-f31d28ae4af7",
-        "name": "Champions Course",
-        "yardage": 7080,
-        "par": 71,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 371
-        }, {
-          "number": 2,
-          "par": 4,
-          "yardage": 461
-        }, {
-          "number": 3,
-          "par": 3,
-          "yardage": 174
-        }, {
-          "number": 4,
-          "par": 5,
-          "yardage": 556
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 442
-        }, {
-          "number": 6,
-          "par": 3,
-          "yardage": 202
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 393
-        }, {
-          "number": 8,
-          "par": 3,
-          "yardage": 212
-        }, {
-          "number": 9,
-          "par": 5,
-          "yardage": 575
-        }, {
-          "number": 10,
-          "par": 5,
-          "yardage": 542
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 474
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 446
-        }, {
-          "number": 13,
-          "par": 3,
-          "yardage": 164
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 429
-        }, {
-          "number": 15,
-          "par": 4,
-          "yardage": 359
-        }, {
-          "number": 16,
-          "par": 3,
-          "yardage": 215
-        }, {
-          "number": 17,
-          "par": 5,
-          "yardage": 605
-        }, {
-          "number": 18,
-          "par": 4,
-          "yardage": 460
-        }]
+        "number": 3,
+        "par": 4,
+        "yardage": 350,
+        "description": "Flowering Pitch"
+      }, {
+        "number": 4,
+        "par": 3,
+        "yardage": 240,
+        "description": "Flowering Crabapple"
+      }, {
+        "number": 5,
+        "par": 4,
+        "yardage": 455,
+        "description": "Magnolia"
+      }, {
+        "number": 6,
+        "par": 3,
+        "yardage": 180,
+        "description": "Juniper"
+      }, {
+        "number": 7,
+        "par": 4,
+        "yardage": 450,
+        "description": "Pampas"
+      }, {
+        "number": 8,
+        "par": 5,
+        "yardage": 570,
+        "description": "Yellow Jasmine"
+      }, {
+        "number": 9,
+        "par": 4,
+        "yardage": 460,
+        "description": "Carolina Cherry"
+      }, {
+        "number": 10,
+        "par": 4,
+        "yardage": 495,
+        "description": "Camellia"
+      }, {
+        "number": 11,
+        "par": 4,
+        "yardage": 505,
+        "description": "White Dogwood"
+      }, {
+        "number": 12,
+        "par": 3,
+        "yardage": 155,
+        "description": "Golden Bell"
+      }, {
+        "number": 13,
+        "par": 5,
+        "yardage": 510,
+        "description": "Azalea"
+      }, {
+        "number": 14,
+        "par": 4,
+        "yardage": 440,
+        "description": "Chinese Fir"
+      }, {
+        "number": 15,
+        "par": 5,
+        "yardage": 530,
+        "description": "Firethorn"
+      }, {
+        "number": 16,
+        "par": 3,
+        "yardage": 170,
+        "description": "Redbud"
+      }, {
+        "number": 17,
+        "par": 4,
+        "yardage": 440,
+        "description": "Nandina"
+      }, {
+        "number": 18,
+        "par": 4,
+        "yardage": 465,
+        "description": "Holly"
       }]
-    }
-  }, {
-    "id": "f50ad093-6238-49e3-876c-c4d52f4f39e1",
-    "name": "The Honda Classic",
-    "event_type": "stroke",
-    "purse": 6600000.0,
-    "winning_share": 1188000.0,
-    "currency": "USD",
-    "points": 500,
-    "start_date": "2018-02-22",
-    "end_date": "2018-02-25",
-    "course_timezone": "US/Eastern",
-    "venue": {
-      "id": "428592ba-b0e9-4de3-b90c-59e08a52359a",
-      "name": "PGA National Champion Course",
-      "city": "Palm Beach Gardens",
-      "state": "FL",
-      "zipcode": "33418",
-      "country": "USA",
-      "courses": [{
-        "id": "2201087a-14c9-46b7-ac5e-8b9059c3d030",
-        "name": "PGA National Golf Club Champion Course",
-        "yardage": 7241,
-        "par": 70,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 365
-        }, {
-          "number": 2,
-          "par": 4,
-          "yardage": 464
-        }, {
-          "number": 3,
-          "par": 5,
-          "yardage": 538
-        }, {
-          "number": 4,
-          "par": 4,
-          "yardage": 376
-        }, {
-          "number": 5,
-          "par": 3,
-          "yardage": 217
-        }, {
-          "number": 6,
-          "par": 4,
-          "yardage": 488
-        }, {
-          "number": 7,
-          "par": 3,
-          "yardage": 226
-        }, {
-          "number": 8,
-          "par": 4,
-          "yardage": 455
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 421
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 525
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 479
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 427
-        }, {
-          "number": 13,
-          "par": 4,
-          "yardage": 388
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 465
-        }, {
-          "number": 15,
-          "par": 3,
-          "yardage": 179
-        }, {
-          "number": 16,
-          "par": 4,
-          "yardage": 434
-        }, {
-          "number": 17,
-          "par": 3,
-          "yardage": 190
-        }, {
-          "number": 18,
-          "par": 5,
-          "yardage": 604
-        }]
-      }]
-    }
-  }, {
-    "id": "2c6a8498-4a73-494b-92b9-29bbbcd1d015",
-    "name": "Arnold Palmer Invitational presented by Mastercard",
-    "event_type": "stroke",
-    "purse": 8900000.0,
-    "winning_share": 1602000.0,
-    "currency": "USD",
-    "points": 500,
-    "start_date": "2018-03-15",
-    "end_date": "2018-03-18",
-    "course_timezone": "US/Eastern",
-    "venue": {
-      "id": "a7a4a2f3-ae79-440f-bf08-7e3399310ba0",
-      "name": "Bay Hill Club & Lodge",
-      "city": "Orlando",
-      "state": "FL",
-      "zipcode": "32819",
-      "country": "USA",
-      "courses": [{
-        "id": "3dfbe47c-04ec-4cc3-9dd9-30626669e6ea",
-        "name": "Bay Hill Club",
-        "yardage": 7381,
-        "par": 72,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 461
-        }, {
-          "number": 2,
-          "par": 3,
-          "yardage": 231
-        }, {
-          "number": 3,
-          "par": 4,
-          "yardage": 434
-        }, {
-          "number": 4,
-          "par": 5,
-          "yardage": 561
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 390
-        }, {
-          "number": 6,
-          "par": 5,
-          "yardage": 555
-        }, {
-          "number": 7,
-          "par": 3,
-          "yardage": 199
-        }, {
-          "number": 8,
-          "par": 4,
-          "yardage": 460
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 474
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 400
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 438
-        }, {
-          "number": 12,
-          "par": 5,
-          "yardage": 574
-        }, {
-          "number": 13,
-          "par": 4,
-          "yardage": 370
-        }, {
-          "number": 14,
-          "par": 3,
-          "yardage": 215
-        }, {
-          "number": 15,
-          "par": 4,
-          "yardage": 429
-        }, {
-          "number": 16,
-          "par": 5,
-          "yardage": 511
-        }, {
-          "number": 17,
-          "par": 3,
-          "yardage": 221
-        }, {
-          "number": 18,
-          "par": 4,
-          "yardage": 458
-        }]
-      }]
-    }
-  }, {
-    "id": "b404a8d5-5e33-4417-ae20-5d4d147042ee",
-    "name": "Masters Tournament",
+    }]
+  }
+},
+  {
+    "id": "b850e0a9-c15d-4263-8122-03df781e2b8d",
+    "name": "PGA Championship",
     "event_type": "stroke",
     "purse": 11000000.0,
     "winning_share": 1980000.0,
     "currency": "USD",
     "points": 600,
-    "start_date": "2018-04-05",
-    "end_date": "2018-04-08",
+    "start_date": "2019-05-16",
+    "end_date": "2019-05-19",
     "course_timezone": "US/Eastern",
     "venue": {
-      "id": "d555598a-aed0-44fe-b659-4250264c7820",
-      "name": "Augusta National Golf Club",
-      "city": "Augusta",
-      "state": "GA",
-      "zipcode": "30904",
+      "id": "eec96d45-6285-4de0-bd78-fb21fedea3e4",
+      "name": "Bethpage State Park, Black Course",
+      "city": "Farmingdale",
+      "state": "NY",
+      "zipcode": "11735",
       "country": "USA",
       "courses": [{
-        "id": "7e9462a5-66ea-4205-b37a-81884e3653cf",
-        "name": "Augusta National",
-        "yardage": 7435,
-        "par": 72,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 445,
-          "description": "Tea Olive"
-        }, {
-          "number": 2,
-          "par": 5,
-          "yardage": 575,
-          "description": "Pink Dogwood"
-        }, {
-          "number": 3,
-          "par": 4,
-          "yardage": 350,
-          "description": "Flowering Pitch"
-        }, {
-          "number": 4,
-          "par": 3,
-          "yardage": 240,
-          "description": "Flowering Crabapple"
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 455,
-          "description": "Magnolia"
-        }, {
-          "number": 6,
-          "par": 3,
-          "yardage": 180,
-          "description": "Juniper"
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 450,
-          "description": "Pampas"
-        }, {
-          "number": 8,
-          "par": 5,
-          "yardage": 570,
-          "description": "Yellow Jasmine"
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 460,
-          "description": "Carolina Cherry"
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 495,
-          "description": "Camellia"
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 505,
-          "description": "White Dogwood"
-        }, {
-          "number": 12,
-          "par": 3,
-          "yardage": 155,
-          "description": "Golden Bell"
-        }, {
-          "number": 13,
-          "par": 5,
-          "yardage": 510,
-          "description": "Azalea"
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 440,
-          "description": "Chinese Fir"
-        }, {
-          "number": 15,
-          "par": 5,
-          "yardage": 530,
-          "description": "Firethorn"
-        }, {
-          "number": 16,
-          "par": 3,
-          "yardage": 170,
-          "description": "Redbud"
-        }, {
-          "number": 17,
-          "par": 4,
-          "yardage": 440,
-          "description": "Nandina"
-        }, {
-          "number": 18,
-          "par": 4,
-          "yardage": 465,
-          "description": "Holly"
-        }]
-      }]
-    }
-  }, {
-    "id": "f1458ef8-6d57-4b9d-b35b-ae163c35bf63",
-    "name": "Wells Fargo Championship",
-    "event_type": "stroke",
-    "purse": 7700000.0,
-    "winning_share": 1386000.0,
-    "currency": "USD",
-    "points": 500,
-    "start_date": "2018-05-03",
-    "end_date": "2018-05-06",
-    "course_timezone": "US/Eastern",
-    "venue": {
-      "id": "bb66b3fb-7248-47d5-ade5-291c704c040c",
-      "name": "Quail Hollow Club",
-      "city": "Charlotte",
-      "state": "NC",
-      "zipcode": "28210",
-      "country": "USA",
-      "courses": [{
-        "id": "100b2a95-74d6-4fd8-8089-7a743481949f",
-        "name": "Quail Hollow Club",
-        "yardage": 7600,
+        "id": "f8f7546a-1482-4da9-877f-68bcb0c705e5",
+        "name": "Bethpage State Park, Black Course",
+        "yardage": 7468,
         "par": 71,
         "holes": [{
           "number": 1,
           "par": 4,
-          "yardage": 524
+          "yardage": 430
         }, {
           "number": 2,
           "par": 4,
-          "yardage": 452
-        }, {
-          "number": 3,
-          "par": 4,
-          "yardage": 483
-        }, {
-          "number": 4,
-          "par": 3,
-          "yardage": 184
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 449
-        }, {
-          "number": 6,
-          "par": 3,
-          "yardage": 249
-        }, {
-          "number": 7,
-          "par": 5,
-          "yardage": 546
-        }, {
-          "number": 8,
-          "par": 4,
-          "yardage": 346
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 505
-        }, {
-          "number": 10,
-          "par": 5,
-          "yardage": 592
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 462
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 456
-        }, {
-          "number": 13,
-          "par": 3,
-          "yardage": 208
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 344
-        }, {
-          "number": 15,
-          "par": 5,
-          "yardage": 577
-        }, {
-          "number": 16,
-          "par": 4,
-          "yardage": 506
-        }, {
-          "number": 17,
-          "par": 3,
-          "yardage": 223
-        }, {
-          "number": 18,
-          "par": 4,
-          "yardage": 494
-        }]
-      }]
-    }
-  }, {
-    "id": "6ff392df-0da8-45df-9733-f8460fd6dc8f",
-    "name": "THE PLAYERS Championship",
-    "event_type": "stroke",
-    "purse": 10500000.0,
-    "winning_share": 1890000.0,
-    "currency": "USD",
-    "points": 600,
-    "start_date": "2018-05-10",
-    "end_date": "2018-05-13",
-    "course_timezone": "US/Eastern",
-    "venue": {
-      "id": "620c31de-da4c-4a68-9659-155d4be520db",
-      "name": "TPC Sawgrass",
-      "city": "Ponte Vedra Beach",
-      "state": "FL",
-      "zipcode": "32082",
-      "country": "USA",
-      "courses": [{
-        "id": "91d909cc-bd5e-4905-9ab8-533c62d4405a",
-        "name": "TPC Sawgrass",
-        "yardage": 7093,
-        "par": 72,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 392
-        }, {
-          "number": 2,
-          "par": 5,
-          "yardage": 532
+          "yardage": 389
         }, {
           "number": 3,
           "par": 3,
-          "yardage": 177
+          "yardage": 230
         }, {
           "number": 4,
-          "par": 4,
-          "yardage": 384
+          "par": 5,
+          "yardage": 517
         }, {
           "number": 5,
-          "par": 4,
-          "yardage": 466
-        }, {
-          "number": 6,
-          "par": 4,
-          "yardage": 393
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 442
-        }, {
-          "number": 8,
-          "par": 3,
-          "yardage": 219
-        }, {
-          "number": 9,
-          "par": 5,
-          "yardage": 583
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 424
-        }, {
-          "number": 11,
-          "par": 5,
-          "yardage": 535
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 358
-        }, {
-          "number": 13,
-          "par": 3,
-          "yardage": 181
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 467
-        }, {
-          "number": 15,
-          "par": 4,
-          "yardage": 449
-        }, {
-          "number": 16,
-          "par": 5,
-          "yardage": 507
-        }, {
-          "number": 17,
-          "par": 3,
-          "yardage": 137
-        }, {
-          "number": 18,
-          "par": 4,
-          "yardage": 447
-        }]
-      }]
-    }
-  }, {
-    "id": "579d7c64-2904-4ce6-b9b2-8998794278d1",
-    "name": "the Memorial Tournament presented by Nationwide",
-    "event_type": "stroke",
-    "purse": 8900000.0,
-    "winning_share": 1602000.0,
-    "currency": "USD",
-    "points": 500,
-    "start_date": "2018-05-31",
-    "end_date": "2018-06-03",
-    "course_timezone": "US/Eastern",
-    "venue": {
-      "id": "d2d453b2-c168-4936-acb6-d88f4d3ba430",
-      "name": "Muirfield Village GC",
-      "city": "Dublin",
-      "state": "OH",
-      "zipcode": "43017",
-      "country": "USA",
-      "courses": [{
-        "id": "0e29f01b-02bb-4e47-92a8-ce19db36242b",
-        "name": "Muirfield Village Golf Club",
-        "yardage": 7392,
-        "par": 72,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 470
-        }, {
-          "number": 2,
-          "par": 4,
-          "yardage": 455
-        }, {
-          "number": 3,
-          "par": 4,
-          "yardage": 401
-        }, {
-          "number": 4,
-          "par": 3,
-          "yardage": 200
-        }, {
-          "number": 5,
-          "par": 5,
-          "yardage": 527
-        }, {
-          "number": 6,
-          "par": 4,
-          "yardage": 447
-        }, {
-          "number": 7,
-          "par": 5,
-          "yardage": 563
-        }, {
-          "number": 8,
-          "par": 3,
-          "yardage": 185
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 412
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 471
-        }, {
-          "number": 11,
-          "par": 5,
-          "yardage": 567
-        }, {
-          "number": 12,
-          "par": 3,
-          "yardage": 184
-        }, {
-          "number": 13,
-          "par": 4,
-          "yardage": 455
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 363
-        }, {
-          "number": 15,
-          "par": 5,
-          "yardage": 529
-        }, {
-          "number": 16,
-          "par": 3,
-          "yardage": 201
-        }, {
-          "number": 17,
           "par": 4,
           "yardage": 478
         }, {
+          "number": 6,
+          "par": 4,
+          "yardage": 408
+        }, {
+          "number": 7,
+          "par": 5,
+          "yardage": 553
+        }, {
+          "number": 8,
+          "par": 3,
+          "yardage": 210
+        }, {
+          "number": 9,
+          "par": 4,
+          "yardage": 460
+        }, {
+          "number": 10,
+          "par": 4,
+          "yardage": 502
+        }, {
+          "number": 11,
+          "par": 4,
+          "yardage": 435
+        }, {
+          "number": 12,
+          "par": 4,
+          "yardage": 501
+        }, {
+          "number": 13,
+          "par": 5,
+          "yardage": 608
+        }, {
+          "number": 14,
+          "par": 3,
+          "yardage": 161
+        }, {
+          "number": 15,
+          "par": 4,
+          "yardage": 478
+        }, {
+          "number": 16,
+          "par": 4,
+          "yardage": 490
+        }, {
+          "number": 17,
+          "par": 3,
+          "yardage": 207
+        }, {
           "number": 18,
           "par": 4,
-          "yardage": 484
+          "yardage": 411
         }]
       }]
     }
-  }, {
-    "id": "ebdd3311-2abf-434d-9b7e-00396078c279",
+  },
+  {
+    "id": "d59637dc-7f7a-4cd8-a4af-0c5d419a9f39",
     "name": "U.S. Open",
     "event_type": "stroke",
     "purse": 12000000.0,
     "winning_share": 2160000.0,
     "currency": "USD",
     "points": 600,
-    "start_date": "2018-06-14",
-    "end_date": "2018-06-17",
-    "course_timezone": "US/Eastern",
+    "start_date": "2019-06-13",
+    "end_date": "2019-06-16",
+    "course_timezone": "US/Pacific",
     "venue": {
-      "id": "f3f67cfe-688f-4908-bb04-8c3dcb821722",
-      "name": "Shinnecock Hills Golf Club",
-      "city": "Southampton",
-      "state": "NY",
-      "zipcode": "11968",
+      "id": "da323e92-6ff1-4f03-8974-4d5b3bf1e357",
+      "name": "Pebble Beach Golf Links",
+      "city": "Pebble Beach",
+      "state": "CA",
+      "zipcode": "93953",
       "country": "USA",
       "courses": [{
-        "id": "7b37ef7f-d174-4f80-bc70-f2e056bf8c6d",
-        "name": "Shinnecock Hills Golf Club",
-        "yardage": 6996,
-        "par": 70,
+        "id": "283cfbf1-86f7-4de4-8749-d02a40383e35",
+        "name": "Spyglass Hill Golf Course",
+        "yardage": 6858,
+        "par": 72,
         "holes": [{
           "number": 1,
-          "par": 4,
-          "yardage": 393
+          "par": 5,
+          "yardage": 595
         }, {
           "number": 2,
-          "par": 3,
-          "yardage": 226
+          "par": 4,
+          "yardage": 349
         }, {
           "number": 3,
-          "par": 4,
-          "yardage": 478
+          "par": 3,
+          "yardage": 152
         }, {
           "number": 4,
-          "par": 4,
-          "yardage": 435
-        }, {
-          "number": 5,
-          "par": 5,
-          "yardage": 537
-        }, {
-          "number": 6,
-          "par": 4,
-          "yardage": 474
-        }, {
-          "number": 7,
-          "par": 3,
-          "yardage": 189
-        }, {
-          "number": 8,
-          "par": 4,
-          "yardage": 398
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 443
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 412
-        }, {
-          "number": 11,
-          "par": 3,
-          "yardage": 158
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 468
-        }, {
-          "number": 13,
           "par": 4,
           "yardage": 370
         }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 443
-        }, {
-          "number": 15,
-          "par": 4,
-          "yardage": 403
-        }, {
-          "number": 16,
-          "par": 5,
-          "yardage": 540
-        }, {
-          "number": 17,
+          "number": 5,
           "par": 3,
-          "yardage": 179
+          "yardage": 183
         }, {
-          "number": 18,
+          "number": 6,
           "par": 4,
-          "yardage": 450
-        }]
-      }]
-    }
-  }, {
-    "id": "7054997a-8f30-4f09-a059-7535e4a71c49",
-    "name": "Travelers Championship",
-    "event_type": "stroke",
-    "purse": 7000000.0,
-    "winning_share": 1260000.0,
-    "currency": "USD",
-    "points": 500,
-    "start_date": "2018-06-21",
-    "end_date": "2018-06-24",
-    "course_timezone": "US/Eastern",
-    "venue": {
-      "id": "0d614dd2-da0e-47ab-b555-3d272e48fe25",
-      "name": "TPC River Highlands",
-      "city": "Cromwell",
-      "state": "CT",
-      "zipcode": "06416",
-      "country": "USA",
-      "courses": [{
-        "id": "ad3e0860-dd6b-4cdc-87fb-16808c4e6cc8",
-        "name": "TPC River Highlands",
-        "yardage": 6820,
-        "par": 70,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 434
+          "yardage": 416
         }, {
-          "number": 2,
-          "par": 4,
-          "yardage": 341
+          "number": 7,
+          "par": 5,
+          "yardage": 529
         }, {
-          "number": 3,
+          "number": 8,
+          "par": 4,
+          "yardage": 399
+        }, {
+          "number": 9,
           "par": 4,
           "yardage": 431
         }, {
-          "number": 4,
-          "par": 4,
-          "yardage": 460
-        }, {
-          "number": 5,
-          "par": 3,
-          "yardage": 223
-        }, {
-          "number": 6,
-          "par": 5,
-          "yardage": 574
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 443
-        }, {
-          "number": 8,
-          "par": 3,
-          "yardage": 202
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 406
-        }, {
           "number": 10,
+          "par": 4,
+          "yardage": 407
+        }, {
+          "number": 11,
+          "par": 5,
+          "yardage": 528
+        }, {
+          "number": 12,
+          "par": 3,
+          "yardage": 178
+        }, {
+          "number": 13,
+          "par": 4,
+          "yardage": 441
+        }, {
+          "number": 14,
+          "par": 5,
+          "yardage": 560
+        }, {
+          "number": 15,
+          "par": 3,
+          "yardage": 125
+        }, {
+          "number": 16,
           "par": 4,
           "yardage": 462
         }, {
-          "number": 11,
-          "par": 3,
-          "yardage": 158
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 411
-        }, {
-          "number": 13,
-          "par": 5,
-          "yardage": 523
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 421
-        }, {
-          "number": 15,
-          "par": 4,
-          "yardage": 296
-        }, {
-          "number": 16,
-          "par": 3,
-          "yardage": 171
-        }, {
           "number": 17,
           "par": 4,
-          "yardage": 420
+          "yardage": 325
         }, {
           "number": 18,
           "par": 4,
-          "yardage": 444
+          "yardage": 408
         }]
-      }]
-    }
-  }, {
-    "id": "51e18f90-178b-4169-a145-5008da07140e",
-    "name": "Quicken Loans National",
-    "event_type": "stroke",
-    "purse": 7100000.0,
-    "winning_share": 1278000.0,
-    "currency": "USD",
-    "points": 500,
-    "start_date": "2018-06-28",
-    "end_date": "2018-07-01",
-    "course_timezone": "US/Eastern",
-    "venue": {
-      "id": "24a8dc79-afd1-4bf8-9b48-687475e4b06a",
-      "name": "TPC Potomac at Avenel Farm",
-      "city": "Potomac",
-      "state": "MD",
-      "zipcode": "20854",
-      "country": "USA",
-      "courses": [{
-        "id": "b6b870ab-1d8b-4dbd-bcf7-be27d034f0fc",
-        "name": "TPC Potomac at Avenel Farm",
-        "yardage": 7141,
+      }, {
+        "id": "32700de7-18b8-41a2-80fd-28d5ee44a48b",
+        "name": "Monterey Peninsula Shore Course",
+        "yardage": 6838,
         "par": 70,
         "holes": [{
           "number": 1,
           "par": 4,
-          "yardage": 440
+          "yardage": 454
         }, {
           "number": 2,
-          "par": 5,
-          "yardage": 619
+          "par": 4,
+          "yardage": 391
         }, {
           "number": 3,
           "par": 3,
-          "yardage": 225
+          "yardage": 155
         }, {
           "number": 4,
           "par": 4,
-          "yardage": 440
+          "yardage": 401
         }, {
           "number": 5,
           "par": 4,
-          "yardage": 365
+          "yardage": 349
         }, {
           "number": 6,
-          "par": 4,
-          "yardage": 484
+          "par": 5,
+          "yardage": 548
         }, {
           "number": 7,
-          "par": 4,
-          "yardage": 452
+          "par": 3,
+          "yardage": 226
         }, {
           "number": 8,
           "par": 4,
-          "yardage": 469
+          "yardage": 454
         }, {
           "number": 9,
           "par": 3,
-          "yardage": 201
+          "yardage": 224
         }, {
           "number": 10,
           "par": 5,
-          "yardage": 560
+          "yardage": 544
         }, {
           "number": 11,
-          "par": 4,
-          "yardage": 470
+          "par": 3,
+          "yardage": 176
         }, {
           "number": 12,
-          "par": 3,
-          "yardage": 168
+          "par": 5,
+          "yardage": 599
         }, {
           "number": 13,
           "par": 4,
-          "yardage": 360
+          "yardage": 401
         }, {
           "number": 14,
-          "par": 4,
-          "yardage": 299
+          "par": 3,
+          "yardage": 190
         }, {
           "number": 15,
           "par": 4,
-          "yardage": 490
+          "yardage": 415
         }, {
           "number": 16,
           "par": 4,
-          "yardage": 412
+          "yardage": 500
         }, {
           "number": 17,
-          "par": 3,
-          "yardage": 222
+          "par": 4,
+          "yardage": 430
         }, {
           "number": 18,
           "par": 4,
-          "yardage": 465
+          "yardage": 381
+        }]
+      }, {
+        "id": "62adb452-8f11-4c5f-b672-7ac014ee4028",
+        "name": "Pebble Beach Golf Links",
+        "yardage": 6816,
+        "par": 72,
+        "holes": [{
+          "number": 1,
+          "par": 4,
+          "yardage": 381
+        }, {
+          "number": 2,
+          "par": 5,
+          "yardage": 502
+        }, {
+          "number": 3,
+          "par": 4,
+          "yardage": 390
+        }, {
+          "number": 4,
+          "par": 4,
+          "yardage": 331
+        }, {
+          "number": 5,
+          "par": 3,
+          "yardage": 188
+        }, {
+          "number": 6,
+          "par": 5,
+          "yardage": 513
+        }, {
+          "number": 7,
+          "par": 3,
+          "yardage": 106
+        }, {
+          "number": 8,
+          "par": 4,
+          "yardage": 418
+        }, {
+          "number": 9,
+          "par": 4,
+          "yardage": 466
+        }, {
+          "number": 10,
+          "par": 4,
+          "yardage": 446
+        }, {
+          "number": 11,
+          "par": 4,
+          "yardage": 380
+        }, {
+          "number": 12,
+          "par": 3,
+          "yardage": 202
+        }, {
+          "number": 13,
+          "par": 4,
+          "yardage": 399
+        }, {
+          "number": 14,
+          "par": 5,
+          "yardage": 573
+        }, {
+          "number": 15,
+          "par": 4,
+          "yardage": 397
+        }, {
+          "number": 16,
+          "par": 4,
+          "yardage": 403
+        }, {
+          "number": 17,
+          "par": 3,
+          "yardage": 178
+        }, {
+          "number": 18,
+          "par": 5,
+          "yardage": 543
+        }]
+      }, {
+        "id": "cf04b6a0-f5da-494f-b7e7-46d9d1a6ab97",
+        "name": "Poppy Hills",
+        "yardage": 7002,
+        "par": 71,
+        "holes": [{
+          "number": 1,
+          "par": 5,
+          "yardage": 527
+        }, {
+          "number": 2,
+          "par": 3,
+          "yardage": 161
+        }, {
+          "number": 3,
+          "par": 4,
+          "yardage": 421
+        }, {
+          "number": 4,
+          "par": 4,
+          "yardage": 399
+        }, {
+          "number": 5,
+          "par": 4,
+          "yardage": 385
+        }, {
+          "number": 6,
+          "par": 3,
+          "yardage": 223
+        }, {
+          "number": 7,
+          "par": 4,
+          "yardage": 444
+        }, {
+          "number": 8,
+          "par": 3,
+          "yardage": 179
+        }, {
+          "number": 9,
+          "par": 5,
+          "yardage": 515
+        }, {
+          "number": 10,
+          "par": 4,
+          "yardage": 443
+        }, {
+          "number": 11,
+          "par": 3,
+          "yardage": 202
+        }, {
+          "number": 12,
+          "par": 4,
+          "yardage": 447
+        }, {
+          "number": 13,
+          "par": 5,
+          "yardage": 629
+        }, {
+          "number": 14,
+          "par": 4,
+          "yardage": 478
+        }, {
+          "number": 15,
+          "par": 3,
+          "yardage": 185
+        }, {
+          "number": 16,
+          "par": 4,
+          "yardage": 414
+        }, {
+          "number": 17,
+          "par": 4,
+          "yardage": 415
+        }, {
+          "number": 18,
+          "par": 5,
+          "yardage": 535
         }]
       }]
     }
-  }, {
-    "id": "a641fcd3-dc9a-4dbf-b7bc-3c2d8fe28592",
+  },
+  {
+    "id": "4524eac8-9713-43c5-a742-290d8ab434ba",
     "name": "The Open Championship",
     "event_type": "stroke",
     "purse": 10500000.0,
     "winning_share": 1890000.0,
     "currency": "USD",
     "points": 600,
-    "start_date": "2018-07-19",
-    "end_date": "2018-07-22",
+    "start_date": "2019-07-18",
+    "end_date": "2019-07-21",
     "course_timezone": "Europe/London",
     "venue": {
-      "id": "c441e366-fad0-4b3f-be12-c8ac128674a1",
-      "name": "Carnoustie Golf Links",
-      "city": "Carnoustie",
+      "id": "4021bffa-e93d-4b7e-bef2-39172c09cd7a",
+      "name": "Royal Portrush Golf Club",
+      "city": "Portrush",
       "country": "GBR",
       "courses": [{
-        "id": "63201270-458c-4d8c-9bcb-90fec7c012b2",
-        "name": "Championship Course",
-        "yardage": 7402,
-        "par": 71,
+        "id": "8b2c3c75-0956-465f-9237-2baee9d1365b",
+        "name": "Dunluce Links",
+        "yardage": 7337,
+        "par": 72,
         "holes": [{
           "number": 1,
           "par": 4,
-          "yardage": 396,
-          "description": "Cup"
+          "yardage": 420,
+          "description": "Hughie's"
         }, {
           "number": 2,
-          "par": 4,
-          "yardage": 461,
-          "description": "Gulley"
+          "par": 5,
+          "yardage": 577,
+          "description": "Giant's Grave"
         }, {
           "number": 3,
-          "par": 4,
-          "yardage": 350,
-          "description": "Jockie's Burn"
+          "par": 3,
+          "yardage": 176,
+          "description": "Islay"
         }, {
           "number": 4,
-          "par": 4,
-          "yardage": 415,
-          "description": "Hillocks"
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 412,
-          "description": "Brae"
-        }, {
-          "number": 6,
-          "par": 5,
-          "yardage": 580,
-          "description": "Hogan's Alley"
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 410,
-          "description": "Plantation"
-        }, {
-          "number": 8,
-          "par": 3,
-          "yardage": 187,
-          "description": "Short"
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 474,
-          "description": "Railway"
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 465,
-          "description": "South America"
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 382,
-          "description": "John Philp"
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 503,
-          "description": "Southward Ho"
-        }, {
-          "number": 13,
-          "par": 3,
-          "yardage": 175,
-          "description": "Whins"
-        }, {
-          "number": 14,
-          "par": 5,
-          "yardage": 513,
-          "description": "Spectacles"
-        }, {
-          "number": 15,
-          "par": 4,
-          "yardage": 472,
-          "description": "Lucky Slap"
-        }, {
-          "number": 16,
-          "par": 3,
-          "yardage": 248,
-          "description": "Barry Burn"
-        }, {
-          "number": 17,
-          "par": 4,
-          "yardage": 460,
-          "description": "Island"
-        }, {
-          "number": 18,
           "par": 4,
           "yardage": 499,
-          "description": "Home"
-        }]
-      }]
-    }
-  }, {
-    "id": "4f5761bc-cf16-4ae9-9f19-67baa5d1bde3",
-    "name": "World Golf Championships-Bridgestone Invitational",
-    "event_type": "stroke",
-    "purse": 10000000.0,
-    "winning_share": 1702564.0,
-    "currency": "USD",
-    "points": 550,
-    "start_date": "2018-08-02",
-    "end_date": "2018-08-05",
-    "course_timezone": "US/Eastern",
-    "venue": {
-      "id": "08c7803b-0ef8-4e8a-84db-a3095cb227f3",
-      "name": "Firestone Country Club",
-      "city": "Akron",
-      "state": "OH",
-      "zipcode": "44319",
-      "country": "USA",
-      "courses": [{
-        "id": "e6c59645-5894-4872-9e03-541fa2f25828",
-        "name": "Firestone Country Club - South Course",
-        "yardage": 7400,
-        "par": 70,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 399
-        }, {
-          "number": 2,
-          "par": 5,
-          "yardage": 526
-        }, {
-          "number": 3,
-          "par": 4,
-          "yardage": 442
-        }, {
-          "number": 4,
-          "par": 4,
-          "yardage": 471
-        }, {
-          "number": 5,
-          "par": 3,
-          "yardage": 200
-        }, {
-          "number": 6,
-          "par": 4,
-          "yardage": 469
-        }, {
-          "number": 7,
-          "par": 3,
-          "yardage": 219
-        }, {
-          "number": 8,
-          "par": 4,
-          "yardage": 482
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 494
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 410
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 418
-        }, {
-          "number": 12,
-          "par": 3,
-          "yardage": 180
-        }, {
-          "number": 13,
-          "par": 4,
-          "yardage": 471
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 467
-        }, {
-          "number": 15,
-          "par": 3,
-          "yardage": 221
-        }, {
-          "number": 16,
-          "par": 5,
-          "yardage": 667
-        }, {
-          "number": 17,
-          "par": 4,
-          "yardage": 400
-        }, {
-          "number": 18,
-          "par": 4,
-          "yardage": 464
-        }]
-      }]
-    }
-  }, {
-    "id": "3493243a-8ce6-40e9-bde5-fe8993084364",
-    "name": "PGA Championship",
-    "event_type": "stroke",
-    "purse": 10500000.0,
-    "winning_share": 1890000.0,
-    "currency": "USD",
-    "points": 600,
-    "start_date": "2018-08-09",
-    "end_date": "2018-08-12",
-    "course_timezone": "US/Central",
-    "venue": {
-      "id": "4eab94bb-646c-4fc3-9119-2b1742b35689",
-      "name": "Bellerive Country Club",
-      "city": "Town and Country",
-      "state": "MO",
-      "zipcode": "63141",
-      "country": "USA",
-      "courses": [{
-        "id": "fdacce2f-6089-4efd-b260-59f81e6ed5de",
-        "name": "Bellerive Country Club",
-        "yardage": 7547,
-        "par": 71,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 438
-        }, {
-          "number": 2,
-          "par": 4,
-          "yardage": 413
-        }, {
-          "number": 3,
-          "par": 3,
-          "yardage": 194
-        }, {
-          "number": 4,
-          "par": 5,
-          "yardage": 575
+          "description": "Fred Daly's"
         }, {
           "number": 5,
           "par": 4,
-          "yardage": 473
+          "yardage": 403,
+          "description": "White Rocks"
         }, {
           "number": 6,
           "par": 3,
-          "yardage": 215
+          "yardage": 191,
+          "description": "Harry Colt's"
         }, {
           "number": 7,
-          "par": 4,
-          "yardage": 397
-        }, {
-          "number": 8,
           "par": 5,
-          "yardage": 618
-        }, {
-          "number": 9,
-          "par": 4,
-          "yardage": 445
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 519
-        }, {
-          "number": 11,
-          "par": 4,
-          "yardage": 376
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 482
-        }, {
-          "number": 13,
-          "par": 3,
-          "yardage": 184
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 415
-        }, {
-          "number": 15,
-          "par": 4,
-          "yardage": 494
-        }, {
-          "number": 16,
-          "par": 3,
-          "yardage": 237
-        }, {
-          "number": 17,
-          "par": 5,
-          "yardage": 608
-        }, {
-          "number": 18,
-          "par": 4,
-          "yardage": 464
-        }]
-      }]
-    }
-  }, {
-    "id": "88b26ec2-9a07-4359-9e4f-915c381c37a5",
-    "name": "Wyndham Championship",
-    "event_type": "stroke",
-    "purse": 6000000.0,
-    "winning_share": 1080000.0,
-    "currency": "USD",
-    "points": 500,
-    "start_date": "2018-08-16",
-    "end_date": "2018-08-19",
-    "course_timezone": "US/Eastern",
-    "venue": {
-      "id": "c7eeb574-ce09-4c61-8fa6-dd5f9685c3f0",
-      "name": "Sedgefield Country Club",
-      "city": "Greensboro",
-      "state": "NC",
-      "zipcode": "27407",
-      "country": "USA",
-      "courses": [{
-        "id": "e0e8218f-7815-485e-b176-6b731e285e34",
-        "name": "Sedgefield Country Club",
-        "yardage": 7117,
-        "par": 70,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 418
-        }, {
-          "number": 2,
-          "par": 4,
-          "yardage": 442
-        }, {
-          "number": 3,
-          "par": 3,
-          "yardage": 174
-        }, {
-          "number": 4,
-          "par": 4,
-          "yardage": 428
-        }, {
-          "number": 5,
-          "par": 5,
-          "yardage": 529
-        }, {
-          "number": 6,
-          "par": 4,
-          "yardage": 423
-        }, {
-          "number": 7,
-          "par": 3,
-          "yardage": 223
+          "yardage": 572,
+          "description": "Curran Point"
         }, {
           "number": 8,
           "par": 4,
-          "yardage": 374
+          "yardage": 435,
+          "description": "Dunluce"
         }, {
           "number": 9,
           "par": 4,
-          "yardage": 416
+          "yardage": 430,
+          "description": "P.G. Stevenson's"
         }, {
           "number": 10,
           "par": 4,
-          "yardage": 440
+          "yardage": 448,
+          "description": "Himalayas"
         }, {
           "number": 11,
-          "par": 4,
-          "yardage": 486
+          "par": 5,
+          "yardage": 473,
+          "description": "Tavern"
         }, {
           "number": 12,
-          "par": 3,
-          "yardage": 235
+          "par": 5,
+          "yardage": 530,
+          "description": "Dhu Varren"
         }, {
           "number": 13,
-          "par": 4,
-          "yardage": 405
+          "par": 3,
+          "yardage": 192,
+          "description": "Feather Bed"
         }, {
           "number": 14,
           "par": 4,
-          "yardage": 501
-        }, {
-          "number": 15,
-          "par": 5,
-          "yardage": 547
-        }, {
-          "number": 16,
-          "par": 3,
-          "yardage": 163
-        }, {
-          "number": 17,
-          "par": 4,
-          "yardage": 406
-        }, {
-          "number": 18,
-          "par": 4,
-          "yardage": 507
-        }]
-      }]
-    }
-  }, {
-    "id": "1b688431-5102-4ae3-a0e3-0fb9ccfcfdec",
-    "name": "TOUR Championship",
-    "event_type": "stroke",
-    "purse": 9000000.0,
-    "winning_share": 1620000.0,
-    "currency": "USD",
-    "points": 2000,
-    "start_date": "2018-09-20",
-    "end_date": "2018-09-23",
-    "course_timezone": "US/Eastern",
-    "venue": {
-      "id": "4ce41d81-8412-4696-afcf-f2397bc26c72",
-      "name": "East Lake GC",
-      "city": "Atlanta",
-      "state": "GA",
-      "zipcode": "30317",
-      "country": "USA",
-      "courses": [{
-        "id": "58016222-6d1e-4db9-b19f-1512500f624f",
-        "name": "East Lake GC",
-        "yardage": 7217,
-        "par": 70,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 424
-        }, {
-          "number": 2,
-          "par": 3,
-          "yardage": 214
-        }, {
-          "number": 3,
-          "par": 4,
-          "yardage": 387
-        }, {
-          "number": 4,
-          "par": 4,
-          "yardage": 440
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 520
-        }, {
-          "number": 6,
-          "par": 5,
-          "yardage": 525
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 394
-        }, {
-          "number": 8,
-          "par": 4,
-          "yardage": 405
-        }, {
-          "number": 9,
-          "par": 3,
-          "yardage": 235
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 469
-        }, {
-          "number": 11,
-          "par": 3,
-          "yardage": 197
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 391
-        }, {
-          "number": 13,
-          "par": 4,
-          "yardage": 439
-        }, {
-          "number": 14,
-          "par": 4,
-          "yardage": 442
-        }, {
-          "number": 15,
-          "par": 3,
-          "yardage": 211
-        }, {
-          "number": 16,
-          "par": 4,
-          "yardage": 481
-        }, {
-          "number": 17,
-          "par": 4,
-          "yardage": 453
-        }, {
-          "number": 18,
-          "par": 5,
-          "yardage": 590
-        }]
-      }]
-    }
-  }, {
-    "id": "06c4bf3d-234b-4e34-81c5-36b3bbec346c",
-    "name": "Ryder Cup",
-    "event_type": "cup",
-    "currency": "USD",
-    "start_date": "2018-09-28",
-    "end_date": "2018-09-30",
-    "course_timezone": "Europe/Paris",
-    "venue": {
-      "id": "e7a4a5e0-78d9-49fa-ab66-183240b8835e",
-      "name": "Le Golf National",
-      "city": "Paris",
-      "country": "FRA",
-      "courses": [{
-        "id": "5fdd83ab-f1b2-49c6-8b58-64b3897f8125",
-        "name": "Le Golf National",
-        "yardage": 7331,
-        "par": 71,
-        "holes": [{
-          "number": 1,
-          "par": 4,
-          "yardage": 416
-        }, {
-          "number": 2,
-          "par": 3,
-          "yardage": 213
-        }, {
-          "number": 3,
-          "par": 5,
-          "yardage": 563
-        }, {
-          "number": 4,
-          "par": 4,
-          "yardage": 487
-        }, {
-          "number": 5,
-          "par": 4,
-          "yardage": 405
-        }, {
-          "number": 6,
-          "par": 4,
-          "yardage": 383
-        }, {
-          "number": 7,
-          "par": 4,
-          "yardage": 481
-        }, {
-          "number": 8,
-          "par": 3,
-          "yardage": 208
-        }, {
-          "number": 9,
-          "par": 5,
-          "yardage": 596
-        }, {
-          "number": 10,
-          "par": 4,
-          "yardage": 383
-        }, {
-          "number": 11,
-          "par": 3,
-          "yardage": 191
-        }, {
-          "number": 12,
-          "par": 4,
-          "yardage": 443
-        }, {
-          "number": 13,
-          "par": 4,
-          "yardage": 427
-        }, {
-          "number": 14,
-          "par": 5,
-          "yardage": 607
+          "yardage": 464,
+          "description": "Causeway"
         }, {
           "number": 15,
           "par": 4,
-          "yardage": 399
+          "yardage": 427,
+          "description": "Skerries"
         }, {
           "number": 16,
           "par": 3,
-          "yardage": 175
+          "yardage": 230,
+          "description": "Calamity Corner"
         }, {
           "number": 17,
           "par": 4,
-          "yardage": 484
+          "yardage": 405,
+          "description": "Purgatory"
         }, {
           "number": 18,
           "par": 4,
-          "yardage": 470
+          "yardage": 465,
+          "description": "Babington's"
         }]
       }]
     }
-  }]
-}
+  }
+] 

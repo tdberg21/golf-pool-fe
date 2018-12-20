@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { scrubTournaments } from '../../helpers/dataCleaners';
 import Card from '../Card/Card';
 import './ScheduleContainer.css';
-import { schedule } from './ScheduleData';
+import { majors } from './ScheduleData';
 
 class ScheduleContainer extends Component {
   constructor() {
@@ -20,7 +20,7 @@ class ScheduleContainer extends Component {
 
   handleGetTournaments = async () => {
     // const tournamentsResponse = await fetchTournaments();
-    const cleanTourns = scrubTournaments(schedule.tournaments).reverse();
+    const cleanTourns = scrubTournaments(majors);
     
     this.setState({
       tournaments: cleanTourns
